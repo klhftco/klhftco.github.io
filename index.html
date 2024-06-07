@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="Width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Leo Huang portfolio">
+		<meta name="keywords" content="Leo Huang, UC Berkeley">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
     <title>klhftco</title>
-    <!-- <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script> -->
   </head>
   <body>
     <div>
@@ -14,5 +17,16 @@
        <a href="/website/index.html">My Website (wip)</a>
        <br><br>
     </div>
+    <!-- <script src="script.js" defer></script> -->
   </body>
+  <script>
+		var links = document.body.getElementsByTagName("a")
+		var a = window.location.href.indexOf(".io")
+		var repo_name = window.location.href.substring(a+3)
+		for(var i = 0; i < links.length; i++){
+			var link = links[i]
+			var actual_name = link.href.substring(link.href.indexOf(".io")+4)
+			link.href = repo_name + actual_name
+		}
+	</script>
 </html>
