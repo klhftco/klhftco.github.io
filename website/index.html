@@ -23,6 +23,9 @@
 		var links = document.body.getElementsByTagName("a")
 		var a = window.location.href.indexOf(".io")
 		var repo_name = window.location.href.substring(a+3)
+    console.log(links)
+    console.log(a)
+    console.log(repo_name)
 		for(var i = 0; i < links.length; i++){
 			var link = links[i]
 			var actual_name = link.href.substring(link.href.indexOf(".io")+4)
