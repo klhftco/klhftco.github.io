@@ -64,6 +64,7 @@ section styles
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  background-color: lavender;
 }
 
 #navbar .logo {
