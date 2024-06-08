@@ -2,6 +2,24 @@
   global styles
 ===============*/
 
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --header-font: 'Sen', sans-serif;
+  --header-font-weight: bold;
+  --header-font-size: 20px;
+  --body-font: 'Inter', sans-serif;
+  --body-font-weight: normal;
+  --body-font-size: 16px;
+  --clr-bg: #fcfcfc;
+  --clr-fg: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -15,17 +33,110 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
-/* body {
-  font-family: "Poppins", sans-serif;
+body {
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  background-color: var(--clr-bg);
   line-height: 1.5;
   color: var(--clr-fg);
-  background-color: var(--clr-bg);
-} */
+  width: 100%;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font);
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+}
+
+section {
+  border: solid black 1px;
+}
+
+/*===============
+section styles
+===============*/
+
+#navbar {
+  height: 6vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#navbar .logo {
+  position: absolute;
+  top: 0.3vh;
+  left: 0.5vw;
+}
+
+.nav {
+  height: 100%;
+  padding-right: 5px;
+}
+
+.nav__list {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.nav__list * {
+  /* border: solid black 1px; */
+  margin: 0 5px 0 0;
+  text-decoration: none;
+}
+
+/* ----------------------------------------- */
+
+#about {
+  height: 94vh;
+  justify-content: center;
+  text-align: center;
+}
+
+#experience {
+  /* height: 200vh; */
+  text-align: center;
+}
+
+#education {
+  padding: 2em 0 0 0;
+}
+
+.work-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.work-container .description-section {
+  width: 80%;
+}
+
+#skills {
+  height: 50vh;
+  text-align: center;
+}
+
+#project {
+  height: 150vh;
+  text-align: center;
+}
+
+#footer {
+  height: 6vh;
+  text-align: center;
+}
+
+/*===============
+section styles END
+===============*/
 
 .scroll-top {
   display: none;
