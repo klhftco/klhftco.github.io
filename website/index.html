@@ -6,14 +6,14 @@
     <meta name="description" content="Leo Huang portfolio">
 		<meta name="keywords" content="Leo Huang, UC Berkeley">
 
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <!-- <link rel = "icon" type = "image/svg+xml" href = "assets/img/favicon/favicon_svg.svg">
     <link rel = "alternate icon" href = "assets/img/favicon/favicon_ico.ico">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01"> -->
-    <link rel="stylesheet" href="assets/css/loading-screen-style.css">
+    <!-- <link rel="stylesheet" href="assets/css/loading-screen-style.css">
     <link rel="stylesheet" href="assets/css/homepage-style.css">
     <link rel="stylesheet" href="assets/css/about-me-style.css">
-    <link rel="stylesheet" href="assets/css/experience-style.css">
+    <link rel="stylesheet" href="assets/css/experience-style.css"> -->
 
     <title>klhftco</title>
   </head>
@@ -23,174 +23,274 @@
         <div class = "ring one"></div>
         <div class = "ring two"></div>
     </section> -->
-    <section id = "about-me">
-                <h1 id = "about-me-header">About Me</h1>
-                <div class = "graphic-container left-fade" id = "cs-graphics">
-                    <img src="assets/img/about_graphics/computer_graphic.svg" id = "computer-graphic">
-                    <img src="assets/img/about_graphics/webpage_graphic.svg" id = "website-graphic">
-                </div>
-                <p id = "cs-description" class= "left-fade">
-                    I’m a UC Berkeley alum who majored in Computer Science and minored in Data Science.
-                    I’m a self-motivated learner and enjoy exploring my passion for programming
-                    through industry experiences, contract work, and personal projects.
-                </p>
-                <div class = "graphic-container right-fade" id = "life-graphics">
-                    <img src="assets/img/about_graphics/tennis_graphic.svg" id = "tennis-graphic">
-                    <img id = "boba" src="assets/img/about_graphics/boba_graphic.svg" id = "boba-graphic">
-                </div>
-                <div id = "dividing-line"></div>
-                <p id = "life-description" class = "right-fade">
-                    I’ve grown up in the Bay Area, and in my free time, I like to play tennis,
-                    basketball, and spikeball. I also love watching K-Dramas and eating ramen.
-                </p>
-                <div id = "particles-about"></div>
-            </section>
 
-            <section id = "experience">
-                <h1>Experience</h1>
-                <div class = "section-heading">
-                    <div class = "first section-line"></div>
-                    <h3 class = "section-text-name">Work</h3>
-                    <div class = "second section-line"></div>
-                </div>
-                <div class = "work-container">
-                    <a href = "https://ziphq.com/" target = "_blank">
-                        <img src="assets/img/link_icon.svg" class = "link-icon">
-                    </a>
-                    <img src= "assets/img/work_experience/zip.svg" class = "company-logo" id = "zip-logo">
-                    <div class = "logo-description-dividing-line"></div>
-                    <div class = "description-section">
-                        <h4>Software Engineering Intern</h4>
-                        <h5>Zip - Infrastructure Team</h5>
-                        <h6>June 2023 - Aug. 2023</h6>
-                        <div class = "job-responsibilities">
-                            <p>
-                                Automated the creation and management of cloud-hosted development environments for 70+ engineers using Bash Scripting, SSH tunneling,
-                                and AWS (EC2, VPC, Cloudwatch). Launched EC2 instances with pre-installed dependencies directly in Zip's VPC, reducing developer setup
-                                time by 95% and allowing engineers to seamlessly access the VPC's stateful services (ElasticSearch Clusters, MySQL DB). Implemented a
-                                cost-saving Cloudwatch alarm system that automatically stops EC2 instances with low CPU utilization. Reduced ElasticSearch reindex time,
-                                using database sharding to split up work and parallel Kubernetes pods to process work efficiently. Leveraged job duration logs stored
-                                in AWS S3 to dynamically rebalance job assignments for parallel workers, distributing work evenly.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class = "section-heading">
-                    <div class = "first section-line"></div>
-                    <h3 class = "section-text-name">Education</h3>
-                    <div class = "second section-line"></div>
-                </div>
-                <div class = "work-container">
-                    <a href = "https://www.berkeley.edu/" target = "_blank">
-                        <img src="assets/img/link_icon.svg" class = "link-icon">
-                    </a>
-                    <img src= "assets/img/work_experience/berkeley.png" class = "company-logo" id = "zip-logo">
-                    <div class = "logo-description-dividing-line"></div>
-                    <div class = "description-section">
-                        <h4>B.A. in Computer Science, Minor in Data Science</h4>
-                        <h5>University of California - Berkeley</h5>
-                        <h6>Aug. 2020 - Dec. 2023</h6>
-                        <div class = "job-responsibilities">
-                            <p>
-                                GPA: 4.00
-                                <br>
-                                <br>
-                                Activities: Berkeley Codebase, Cal Blueprint, CS 186 - Database Systems (uGSI), CS 198 - Web Design DeCal (Instructor), CS 61A - The Structure & Interpretation of Computer Programs (Academic Intern),
-                                CS 170 - Efficient Algorithms & Intractable Problems (Reader), Data 8 - Foundations of Data Science (Academic Intern)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div id = "course-lang-flex">
-                    <div id = "courses">
-                        <div class = "section-heading">
-                            <div class = "first section-line"></div>
-                            <h3 class = "section-text-name">Coursework</h3>
-                            <div class = "second section-line"></div>
-                        </div>
-                        <div id = "coursework-container" class = "left-fade">
-                            <p><b>CS 61A</b> - The Structure & Interpretation of Computer Programs</p>
-                            <p><b>CS 61B</b> - Data Structures</p>
-                            <p><b>CS 61C</b> - Computer Architecture & Machine Structures</p>
-                            <p><b>CS 70</b> - Discrete Mathematics & Probability Theory</p>
-                            <p><b>CS 161</b> - Computer Security</p>
-                            <p><b>CS 162</b> - Operating Systems</p>
-                            <p><b>CS 170</b> - Efficient Algorithms & Intractable Problems</p>
-                            <p><b>CS 186</b> - Database Systems</p>
-                            <p><b>CS 198</b> - Web Design DeCal</p>
-                            <p><b>CS 375</b> - Teaching Techniques in Computer Science</p>
-                            <p><b>EECS 16A</b> - Designing Information Devices & Systems I</p>
-                            <p><b>EECS 16B</b> - Designing Information Devices & Systems II</p>
-                            <p><b>DATA 8</b> - Foundations of Data Science</p>
-                            <p><b>DATA 100</b> - Principles and Techniques of Data Science</p>
-                        </div>
-                    </div>
-                    <div id = "languages">
-                        <div class = "section-heading" id = "languages-heading">
-                            <div class = "first section-line" id = "languages-line"></div>
-                            <h3 class = "section-text-name">Languages & Tools</h3>
-                            <div class = "second section-line"></div>
-                        </div>
-                        <div id = "languages-container" class = "right-fade">
-                            <p><b>Languages</b> - Java, Python, Swift, C, HTML, CSS, Javascript, Typescript, SQL, R, RISC-V Assembly, x86 Assembly</p>
-                            <p><b>Frameworks / Libraries</b> - React.js, Redux, Next.js, MaterialUI, Blueprint.js, SwiftUI, XCTest, Chai.js, NumPy, Pandas, JUnit, Selenium Webdriver, Matplotlib, Seaborn, Sklearn, Pygame, JavaFX</p>
-                            <p><b>Tools</b> - Bash Scripting, Git, GitHub, Figma, Postman, Microsoft Azure, Kubernetes, AWS, Docker, Makefile, Firebase</p>
-                        </div>
-                    </div>
-                </div>
+    <section id="navbar">
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#about">about me</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#experience">experiences</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#education">education</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#project">projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav"
+              href="http://tinyurl.com/leo-huang-resume">résumé</a>
+          </li>
+          <li class="nav__list-item">
+            <button type="button" aria-label="toggle theme" class="btn btn--icon">
+              <i id="btn-theme" class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+        <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </section>
 
-                <div class = "section-heading">
-                    <div class = "first section-line"></div>
-                    <h3 class = "section-text-name">Personal Projects</h3>
-                    <div class = "second section-line"></div>
-                </div>
-                <div class = "project-flex">
-                    <div class = "project-container left-fade">
-                        <div class = "project-name">Java VCS</div>
-                        <div class = "project-subheading">
-                            <div>July 2021</div>
-                            <div class = "language-tag">
-                                Java
-                            </div>
-                            <div class = "language-tag">
-                                Git
-                            </div>
-                        </div>
-                        <img class = "project-image" src="assets/img/projects/java-vcs.webp">
-                        <div class = "project-description hidden" id = "java-vcs-description">
-                            <b>A Version Control System built with Java that mimics Git’s functionality, supporting commands like commit, branch, merge, and checkout.</b>
-                            <br>
-                            <br>
-                            Contains a SHA-1 file hashing system that uses serialization to efficiently persist file data in blobs.
-                            Navigates through commit history and merges branches together using tree traversals.
-                        </div>
-                        <img class = "arrow" src="assets/img/projects/arrow.svg">
-                    </div>
-                    <div class = "project-container right-fade">
-                        <a href = "https://stevenhuang010.github.io/Sorting-Illustrator" target = "_blank">
-                            <img src="assets/img/link_icon.svg" class = "link-icon link-project">
-                        </a>
-                        <div class = "project-name">Sorting Visualizer</div>
-                        <div class = "project-subheading">
-                            <div>June 2021</div>
-                            <div class = "language-tag">
-                                React.js
-                            </div>
-                            <div class = "language-tag">
-                                CSS
-                            </div>
-                        </div>
-                        <img class = "project-image" src="assets/img/projects/sorting.png">
-                        <div class = "project-description hidden">
-                            <b>A web application that helps users visualize and understand how certain sorting algorithms work.</b>
-                            <br>
-                            <br>
-                            Implemented algorithms include: Bubble Sort, Insertion Sort, Selection Sort, Merge Sort, Quick Sort, Heap Sort, Shell Sort, and Counting Sort.
-                        </div>
-                        <img class = "arrow" src="assets/img/projects/arrow.svg">
-                    </div>
-            </section>
+    <section id="about">
+      <h1>Leo Huang</h1>
+      <h2>a Masters student studying EECS & BioE @ UC Berkeley.</h2>
+      <h3>aspiring software engineer based in the Bay.</h3>
+      <h4>looking for opportunities to dive into robotics, ML, and biomimetics</h4>
+      <p>
+          Currently
+          researching DNA origami in the Ti Lab @ UC Berkeley
+
+          Driven By
+          exploring! biomimetic robotics, machine learning, and programming
+      </p>
+      <div class="about__contact left">
+        <a href="https://github.com/klhftco" aria-label="github" class="btn--icon link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/huangleo00/" aria-label="linkedin" class="btn--icon link--icon">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="imagecontainer">
+        <img class="headshot" src="assets/img/leo.jpg" width="600" height="400" />
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section__title">Work Experience</h2>
+      <div class="experience__grid">
+        <div class="experience__card">
+          <div class="experience__image__container">
+            <img style="height: 170px; width: 170px;" src="images/hi-logo.png">
+          </div>
+          <div class="experience__content">
+            <div class="experience__company__info">
+              <div class="experience__title">
+                <h4>Software Engineer Intern</h4>
+                <p class="experience__date">June 2022 - August 2022</p>
+              </div>
+              <p class="experience__company__name">Human Interest</p>
+            </div>
+              <p class="experience__description">
+                • Implemented a chat support feature by integrating the CX Cloud Software into 2 UIs to improve quality of
+                customer service
+              </p>
+              <p class="experience__description">
+                • Granted users access to inclusive genders options by remodeling internal tools and frontend inputs to
+                allow for users to self identify
+              </p>
+              <p class="experience__description">
+                • Designed a new database schema for self-identifiable genders and migrated 10000+ existing data to fit
+                new gender schema
+              </p>
+              <p class="experience__description">
+                • Designed an interactive balance history chart component that uses GraphQL resolvers to query and
+                calculate user performances given a specified time range, and visualized the data by utilizing
+                VictoryChart library in Typescript
+              </p>
+              <p class="experience__description">
+                • Increased the integrated test coverage for 5 new features by implementing tests in ChaiJS and Cypress
+                Testing Library
+              </p>
+              <p class="stack">
+                Typescript | GraphQL | NodeJS | PostgreSQL
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class = "work-container">
+        <a href = "https://ziphq.com/" target = "_blank">
+            <img src="assets/img/link_icon.svg" class = "link-icon">
+        </a>
+        <img src= "assets/img/work_experience/zip.svg" class = "company-logo" id = "zip-logo">
+        <div class = "logo-description-dividing-line"></div>
+        <div class = "description-section">
+          <h4>Software Engineering Intern</h4>
+          <h5>Zip - Infrastructure Team</h5>
+          <h6>June 2023 - Aug. 2023</h6>
+          <div class = "job-responsibilities">
+            <p>
+              Automated the creation and management of cloud-hosted development environments for 70+ engineers using Bash Scripting, SSH tunneling,
+              and AWS (EC2, VPC, Cloudwatch). Launched EC2 instances with pre-installed dependencies directly in Zip's VPC, reducing developer setup
+              time by 95% and allowing engineers to seamlessly access the VPC's stateful services (ElasticSearch Clusters, MySQL DB). Implemented a
+              cost-saving Cloudwatch alarm system that automatically stops EC2 instances with low CPU utilization. Reduced ElasticSearch reindex time,
+              using database sharding to split up work and parallel Kubernetes pods to process work efficiently. Leveraged job duration logs stored
+              in AWS S3 to dynamically rebalance job assignments for parallel workers, distributing work evenly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class = "work-container">
+          <a href = "https://www.berkeley.edu/" target = "_blank">
+              <img src="assets/img/berkeley.png" class = "link-icon" width="100" height="100">
+          </a>
+          <div class = "description-section">
+            <h4>M.S. in Electrical Engineering & Computer Science (EECS)</h4>
+            <h5>University of California - Berkeley</h5>
+            <h6>Aug. 2024 - May 2025</h6>
+          </div>
+      </div>
+      <div class = "work-container">
+          <a href = "https://www.berkeley.edu/" target = "_blank">
+              <img src="assets/img/berkeley.png" class = "link-icon" width="100" height="100">
+          </a>
+          <div class = "description-section">
+            <h4>B.S. in Electrical Engineering & Computer Science (EECS)</h4>
+            <h5>University of California - Berkeley</h5>
+            <h6>Aug. 2020 - May 2024</h6>
+            <div class = "job-responsibilities">
+              <p>
+                GPA: 3.71
+                <br>
+                <br>
+                Activities: some things
+              </p>
+            </div>
+          </div>
+      </div>
+      <div id = "course-lang-flex">
+        <div id = "courses">
+            <div class = "section-heading">
+                <div class = "first section-line"></div>
+                <h3 class = "section-text-name">Coursework</h3>
+                <div class = "second section-line"></div>
+            </div>
+            <div id = "coursework-container" class = "left-fade">
+                <p><b>CS 61A</b> - The Structure & Interpretation of Computer Programs</p>
+                <p><b>CS 61B</b> - Data Structures</p>
+                <p><b>CS 61C</b> - Computer Architecture & Machine Structures</p>
+                <p><b>CS 70</b> - Discrete Mathematics & Probability Theory</p>
+                <p><b>CS 161</b> - Computer Security</p>
+                <p><b>CS 162</b> - Operating Systems</p>
+                <p><b>CS 170</b> - Efficient Algorithms & Intractable Problems</p>
+                <p><b>CS 186</b> - Database Systems</p>
+                <p><b>CS 198</b> - Web Design DeCal</p>
+                <p><b>CS 375</b> - Teaching Techniques in Computer Science</p>
+                <p><b>EECS 16A</b> - Designing Information Devices & Systems I</p>
+                <p><b>EECS 16B</b> - Designing Information Devices & Systems II</p>
+                <p><b>DATA 8</b> - Foundations of Data Science</p>
+                <p><b>DATA 100</b> - Principles and Techniques of Data Science</p>
+            </div>
+        </div>
+      </div>
+      <div class = "work-container">
+          <a href = "https://www.berkeley.edu/" target = "_blank">
+              <img src="assets/img/berkeley.png" class = "link-icon" width="100" height="100">
+          </a>
+          <div class = "description-section">
+            <h4>B.S. in Bioengineering</h4>
+            <h5>University of California - Berkeley</h5>
+            <h6>Aug. 2020 - May 2024</h6>
+            <div class = "job-responsibilities">
+              <p>
+                GPA: 3.71
+                <br>
+                <br>
+                Activities: some things
+              </p>
+            </div>
+          </div>
+      </div>
+      <div id = "course-lang-flex">
+        <div id = "courses">
+            <div class = "section-heading">
+                <div class = "first section-line"></div>
+                <h3 class = "section-text-name">Coursework</h3>
+                <div class = "second section-line"></div>
+            </div>
+            <div id = "coursework-container" class = "left-fade">
+                <p><b>CS 61A</b> - The Structure & Interpretation of Computer Programs</p>
+                <p><b>CS 61B</b> - Data Structures</p>
+                <p><b>CS 61C</b> - Computer Architecture & Machine Structures</p>
+                <p><b>CS 70</b> - Discrete Mathematics & Probability Theory</p>
+                <p><b>CS 161</b> - Computer Security</p>
+                <p><b>CS 162</b> - Operating Systems</p>
+                <p><b>CS 170</b> - Efficient Algorithms & Intractable Problems</p>
+                <p><b>CS 186</b> - Database Systems</p>
+                <p><b>CS 198</b> - Web Design DeCal</p>
+                <p><b>CS 375</b> - Teaching Techniques in Computer Science</p>
+                <p><b>EECS 16A</b> - Designing Information Devices & Systems I</p>
+                <p><b>EECS 16B</b> - Designing Information Devices & Systems II</p>
+                <p><b>DATA 8</b> - Foundations of Data Science</p>
+                <p><b>DATA 100</b> - Principles and Techniques of Data Science</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <br><br>
+      <h3>Skills</h3>
+      <div id = "languages">
+        <div id = "languages-container" class = "right-fade">
+          <p><b>Languages</b> - Java, Python, Swift, C, HTML, CSS, Javascript, Typescript, SQL, R, RISC-V Assembly, x86 Assembly</p>
+          <p><b>Frameworks / Libraries</b> - React.js, Redux, Next.js, MaterialUI, Blueprint.js, SwiftUI, XCTest, Chai.js, NumPy, Pandas, JUnit, Selenium Webdriver, Matplotlib, Seaborn, Sklearn, Pygame, JavaFX</p>
+          <p><b>Tools</b> - Bash Scripting, Git, GitHub, Figma, Postman, Microsoft Azure, Kubernetes, AWS, Docker, Makefile, Firebase</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <br><br>
+      <h2 class="section__title">Personal Projects</h2>
+      <div class="project">
+        <div class="project__card" id="animation__container3">
+          <div>
+            <h4 id="venmo-integration">Venmo-Integration</h4>
+            <div class="project__content">
+              <img id="project__image" style="height: 140px;" src="images/tasa-logo.png" />
+            </div>
+            <i class="fas fa-chevron-down" style="margin-top: 30px;"></i>
+          </div>
+        </div>
+        <div class="project__description none" id="animation__container4">
+          <i class="fas fa-chevron-up" style="margin-bottom: 10px;"></i>
+          <p class="project__desc">A web-portal for the Taiwanese American Student Association that queries and sorts through Venmo transactional data using Venmo API. Allows for keyword and date range searches that would filter the data. Saved the Treasurer 20+ hours of manual labor.</p>
+          <a href="https://github.com/j0nnn/Venmo-Integration" target="_blank" class="btn--icon link--icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <p class="stack">Python | HTML | CSS | SQLite3</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+
+      Created by Leo Huang
+    </section>
+
+
+    <br><br>
     <div>
+	     <a href="#top">Go To Top</a>
+       <br><br>
 	     <a href="/button/index.html">Other Work (Button)</a>
        <br><br>
        <a href="/website/index.html">My Website (wip)</a>

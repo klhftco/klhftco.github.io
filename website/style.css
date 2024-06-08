@@ -1,0 +1,38 @@
+/*===============
+  global styles
+===============*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: var(--clr-fg);
+  background-color: var(--clr-bg);
+} */
+
+
+.scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 1em;
+  right: 2em;
+  background-color: transparent;
+  font-size: 1.8rem;
+  transition: transform 0.2s ease-in-out;
+}
