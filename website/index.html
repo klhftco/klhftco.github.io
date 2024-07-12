@@ -24,27 +24,30 @@
         <div class = "ring two"></div>
     </section> -->
 
-    <section id="navbar">
-      <img class="logo" src="assets/img/logo.png" width="40" height="40" />
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
+    <section id="home">
+      <img class="logo" src="assets/img/logo-transparent.png" />
+      <nav class="nav">
+        <ul class="nav_list">
+          <li class="nav_list-item">
+            <a class="link link--nav" href="#home">home</a>
+          </li>
+          <li class="nav_list-item">
             <a class="link link--nav" href="#about">about me</a>
           </li>
-          <li class="nav__list-item">
+          <li class="nav_list-item">
             <a class="link link--nav" href="#experience">experiences</a>
           </li>
-          <li class="nav__list-item">
+          <li class="nav_list-item">
             <a class="link link--nav" href="#education">education</a>
           </li>
-          <li class="nav__list-item">
+          <li class="nav_list-item">
             <a class="link link--nav" href="#project">projects</a>
           </li>
-          <li class="nav__list-item">
+          <li class="nav_list-item">
             <a class="link link--nav"
               href="http://tinyurl.com/leo-huang-resume">résumé</a>
           </li>
-          <li class="nav__list-item">
+          <li class="nav_list-item">
             <button type="button" aria-label="toggle theme" class="btn btn--icon">
               <i id="btn-theme" class="fas fa-moon"></i>
             </button>
@@ -54,30 +57,38 @@
           <i class="fas fa-bars"></i>
         </button>
       </nav>
+      <div class="hero">
+        <h1>Hi, I'm Leo!</h1>
+        <h3>a Master's student studying EECS and BioE @ UC Berkeley.</h3>
+        <div class="icon_list">
+          <a href="https://www.linkedin.com/in/huangleo00/">
+            <img class="icon" src="assets/img/icon-linkedin.png" /></a>
+          <a href="https://github.com/klhftco/">
+            <img class="icon" src="assets/img/icon-github.png" /></a>
+          <a href="mailto:klhftco@berkeley.edu">
+            <img class="icon" src="assets/img/icon-email.png" /></a>
+        </div>
+      </div>
     </section>
 
     <section id="about">
-      <h1>Leo Huang</h1>
-      <h2>a Masters student studying EECS & BioE @ UC Berkeley.</h2>
-      <h3>aspiring software engineer based in the Bay.</h3>
-      <h4>looking for opportunities to dive into robotics, ML, and biomimetics</h4>
-      <p>
-          Currently
-          researching DNA origami in the Ti Lab @ UC Berkeley
-
-          Driven By
-          exploring! biomimetic robotics, machine learning, and programming
-      </p>
-      <div class="about__contact left">
-        <a href="https://github.com/klhftco" aria-label="github" class="btn--icon link--icon">
-          <i aria-hidden="true" class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/huangleo00/" aria-label="linkedin" class="btn--icon link--icon">
-          <i aria-hidden="true" class="fab fa-linkedin"></i>
-        </a>
-      </div>
-      <div class="imagecontainer">
-        <img class="headshot" src="assets/img/leo.jpg" width="600" height="400" />
+      <h1 class="header">About Me</h1>
+      <div class="hero">
+        <div class="profile-container">
+          <img class="profile-dec flip" src="assets/img/profile-dec.png" />
+          <div class="profile-border">
+            <div class="profile-mask">
+              <img class="profile" src="assets/img/leo.jpg" />
+            </div>
+          </div>
+          <img class="profile-dec" src="assets/img/profile-dec.png" />
+        </div>
+        <div class="profile-text">
+          <h4>aspiring software robotics engineer based in the Bay</h4>
+          <h4>looking for opportunities to dive into robotics, ML, and biomimetics</h4>
+          <h4>currently: researching DNA origami in the Ti Lab @ UC Berkeley</h4>
+          <h4>driven by: exploring! biomimetic robotics, machine learning, and programming</h4>
+        </div>
       </div>
     </section>
 
