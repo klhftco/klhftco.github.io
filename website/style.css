@@ -137,107 +137,113 @@ section styles
 }
 
 #about {
-  height: 60vh;
-  justify-content: center;
-  text-align: center;
+  height: 70vh;
 
   .header {
-    margin-top: calc(60 / 775 * 100vh);
-    margin-bottom: calc(60 / 775 * 100vh);
+    text-align: center;
+    padding-top: calc(60 / 775 * 100vh);
+    padding-bottom: calc(60 / 775 * 100vh);
   }
 
   .hero {
     width: 100%;
-    /* height: 100%; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .profile-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
 
-  .profile-mask {
-    width: 200px;
-    height: 200px;
-    /* calc(var(--pfp-size) / 1440 * 100vw); */
-    border-radius: 100%;
-    overflow: hidden;
-  }
-
-  .profile {
-    width: 250px;
-    height: auto;
-    margin: -50px 0 0 -20px;
-  }
-
-  .profile-border {
-    width: 220px;
-    height: 220px;
-    /* calc((var(--pfp-size) + 20) / 1440 * 100vw); */
-    padding: 10px 0 0 10px;
-    /* calc(10 / 1440 * 100vw) 0 0 calc(10 / 1440 * 100vw); */
-    border-radius: 100%;
-    background: rgb(99,189,255);
-    background: radial-gradient(circle, rgba(99,189,255,1) 55%, rgba(255,255,255,1) 70%);
+  --container-size: calc(0.6 * 60vh);
+  --offset-size: calc(var(--container-size) / 8);
+  .profile-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
   }
 
   .profile-dec {
-    width: calc(80 / 1440 * 100vw);
-    height: calc(120 / 775 * 100vh);
+    z-index: 0;
+    position: absolute;
+    width: var(--container-size);
+    height: auto;
     background: none;
-    transform: rotate(15deg) translate(-15px, 120px);
   }
 
-  .flip {
-    transform: rotate(195deg) translate(-40px, 15px);
+  .profile-border {
+    z-index: 1;
+    width: calc(var(--container-size) - var(--offset-size));
+    height: calc(var(--container-size) - var(--offset-size));
+    border-radius: 100%;
+    background: rgb(99,189,255);
+    background: radial-gradient(circle, rgba(99,189,255,1) 60%, rgba(255,255,255,1) 70%);
+  }
+
+  .profile-mask {
+    width: calc(var(--container-size) - var(--offset-size) - 20px);
+    height: calc(var(--container-size) - var(--offset-size) - 20px);
+    border-radius: 100%;
+    margin: 10px 0 0 10px;
+    overflow: hidden;
+  }
+
+  .profile-pic {
+    width: calc(var(--container-size) - 3 * var(--offset-size));
+    height: auto;
+    transform: scale(1.5);
+    margin: -6% 0 0 10%;
   }
 
   .profile-text {
+    z-index: 1;
+    width: 55vw;
+    height: 100%;
+    margin-left: -5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* align-items: flex-start; */
     text-align: left;
-    line-height: calc(2.5 * var(--header-font-size));
-  }
-
-  * {
-    /* border: 1px solid black; */
   }
 
   /* flag: remove when done with debug borders */
   border: none;
 }
 
+#experience {
+  /* height: 200vh; */
+  background-color: #F5F5F5;
+
+  .header {
+    text-align: center;
+    padding-top: calc(60 / 775 * 100vh);
+    padding-bottom: calc(60 / 775 * 100vh);
+  }
+
+  .work-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .work-container .description-section {
+    width: 80%;
+  }
+
+  /* flag: remove when done with debug borders */
+  border: none;
+}
 
 /* ----------------------------------------- */
 
 
-#experience {
-  /* height: 200vh; */
-  height: 94vh;
-  padding: 20vh;
-  background-color: #F5F5F5;
-  text-align: center;
-}
 
 #education {
   padding: 2em 0 0 0;
 }
 
-.work-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.work-container .description-section {
-  width: 80%;
-}
 
 #skills {
   height: 50vh;
