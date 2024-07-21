@@ -7,9 +7,9 @@
 		<meta name="keywords" content="Leo Huang, UC Berkeley">
 
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel = "icon" type = "image/svg+xml" href = "assets/img/favicon/favicon_svg.svg">
-    <link rel = "alternate icon" href = "assets/img/favicon/favicon_ico.ico">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01"> -->
+    <link rel="icon" type = "image/svg+xml" href = "assets/img/logo-transparent.png">
+    <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
+    <link rel="alternate icon" href = "assets/img/favicon/favicon_ico.ico"> -->
     <!-- <link rel="stylesheet" href="assets/css/loading-screen-style.css">
     <link rel="stylesheet" href="assets/css/homepage-style.css">
     <link rel="stylesheet" href="assets/css/about-me-style.css">
@@ -75,117 +75,166 @@
       <h1 class="header">About Me</h1>
       <div class="hero">
         <div class="profile-container">
-          <img class="profile-dec flip" src="assets/img/profile-dec.png" />
+          <img class="profile-dec" src="assets/img/profile-dec.png" />
           <div class="profile-border">
             <div class="profile-mask">
-              <img class="profile" src="assets/img/leo.jpg" />
+              <img class="profile-pic" src="assets/img/leo.jpg" />
             </div>
           </div>
-          <img class="profile-dec" src="assets/img/profile-dec.png" />
         </div>
         <div class="profile-text">
-          <h4>aspiring software robotics engineer based in the Bay</h4>
-          <h4>looking for opportunities to dive into robotics, ML, and biomimetics</h4>
-          <h4>currently: researching DNA origami in the Ti Lab @ UC Berkeley</h4>
-          <h4>driven by: exploring! biomimetic robotics, machine learning, and programming</h4>
+          <h4>aspiring software robotics engineer based in the Bay</h4><br/>
+          <h4>looking for opportunities to dive into robotics, ML, and biomimetics</h4><br/>
+          <h4>currently: researching DNA origami in the Ti Lab @ UC Berkeley</h4><br/>
+          <h4>driven by: exploring! biomimetic robotics, machine learning, and programming</h4><br/>
         </div>
       </div>
     </section>
 
     <section id="experience">
-      <h2 class="section__title">Work Experience</h2>
-      <div class="experience__grid">
-        <div class="experience__card">
-          <div class="experience__image__container">
-            <img style="height: 170px; width: 170px;" src="images/hi-logo.png">
-          </div>
-          <div class="experience__content">
-            <div class="experience__company__info">
-              <div class="experience__title">
-                <h4>Software Engineer Intern</h4>
-                <p class="experience__date">June 2022 - August 2022</p>
-              </div>
-              <p class="experience__company__name">Human Interest</p>
-            </div>
-              <p class="experience__description">
-                • Implemented a chat support feature by integrating the CX Cloud Software into 2 UIs to improve quality of
-                customer service
-              </p>
-              <p class="experience__description">
-                • Granted users access to inclusive genders options by remodeling internal tools and frontend inputs to
-                allow for users to self identify
-              </p>
-              <p class="experience__description">
-                • Designed a new database schema for self-identifiable genders and migrated 10000+ existing data to fit
-                new gender schema
-              </p>
-              <p class="experience__description">
-                • Designed an interactive balance history chart component that uses GraphQL resolvers to query and
-                calculate user performances given a specified time range, and visualized the data by utilizing
-                VictoryChart library in Typescript
-              </p>
-              <p class="experience__description">
-                • Increased the integrated test coverage for 5 new features by implementing tests in ChaiJS and Cypress
-                Testing Library
-              </p>
-              <p class="stack">
-                Typescript | GraphQL | NodeJS | PostgreSQL
-              </p>
+      <div class="spacer-top"></div>
+      <h1 class="header">Experiences</h1>
+      <div class="hero">
+        <div class = "work-container">
+          <a href = "https://www.kla.com/" target = "_blank">
+            <img src= "assets/img/kla.jpg" class = "logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">Systems Software Engineering Intern</h4>
+            <h3 class="organization">KLA - RAPID Division</h5>
+            <h4 class="date">May 2023 - Sept. 2023</h6>
+            <p class="description">
+              Utilized C#, .NET Framework, WPF, and MySQL to develop database tools for system engineers to better diagnose and analyze anomalies in system behavior, reducing debugging time by 90%.
+              Deployed 4 new interactive database features to aid equipment diagnostics and analysis, allowing system engineers to better identify correlations during development.
+              Optimized SQL queries for database application, achieving near 100-fold improvement in query speed, ensuring engineers can seamlessly interact with the database.
+            </p>
+            <!-- Automated the creation and management of cloud-hosted development environments for 70+ engineers using Bash Scripting, SSH tunneling,
+            and AWS (EC2, VPC, Cloudwatch). Launched EC2 instances with pre-installed dependencies directly in Zip's VPC, reducing developer setup
+            time by 95% and allowing engineers to seamlessly access the VPC's stateful services (ElasticSearch Clusters, MySQL DB). Implemented a
+            cost-saving Cloudwatch alarm system that automatically stops EC2 instances with low CPU utilization. Reduced ElasticSearch reindex time,
+            using database sharding to split up work and parallel Kubernetes pods to process work efficiently. Leveraged job duration logs stored
+            in AWS S3 to dynamically rebalance job assignments for parallel workers, distributing work evenly. -->
           </div>
         </div>
-      </div>
-      <div class = "work-container">
-        <a href = "https://ziphq.com/" target = "_blank">
-            <img src="assets/img/link_icon.svg" class = "link-icon">
-        </a>
-        <img src= "assets/img/work_experience/zip.svg" class = "company-logo" id = "zip-logo">
-        <div class = "logo-description-dividing-line"></div>
-        <div class = "description-section">
-          <h4>Software Engineering Intern</h4>
-          <h5>Zip - Infrastructure Team</h5>
-          <h6>June 2023 - Aug. 2023</h6>
-          <div class = "job-responsibilities">
-            <p>
-              Automated the creation and management of cloud-hosted development environments for 70+ engineers using Bash Scripting, SSH tunneling,
-              and AWS (EC2, VPC, Cloudwatch). Launched EC2 instances with pre-installed dependencies directly in Zip's VPC, reducing developer setup
-              time by 95% and allowing engineers to seamlessly access the VPC's stateful services (ElasticSearch Clusters, MySQL DB). Implemented a
-              cost-saving Cloudwatch alarm system that automatically stops EC2 instances with low CPU utilization. Reduced ElasticSearch reindex time,
-              using database sharding to split up work and parallel Kubernetes pods to process work efficiently. Leveraged job duration logs stored
-              in AWS S3 to dynamically rebalance job assignments for parallel workers, distributing work evenly.
+
+        <div class = "work-container">
+          <a href = "https://www.jbei.org/" target = "_blank">
+            <img src= "assets/img/jbei.jpg" class = "logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">Undergraduate Researcher</h4>
+            <h3 class="organization">Joint BioEnergy Institute</h5>
+            <h4 class="date">May 2023 - Sept. 2023</h6>
+            <p class="description">
+              I did something.
             </p>
           </div>
         </div>
+
+        <div class = "work-container">
+          <a href = "https://berkeleytime.com/" target = "_blank">
+            <img src= "assets/img/berkeleytime.jpg" class = "logo">
+          </a>
+          <div class="divider"></div>
+          <div class="description-container">
+            <h2 class="position">Frontend Developer</h4>
+            <h3 class="organization">Berkeleytime</h5>
+            <h4 class="date">May 2023 - Sept. 2023</h6>
+            <p class="description">
+              I did something.
+            </p>
+          </div>
+        </div>
+
+        <div class = "work-container">
+          <a href = "https://teralytic.com/" target = "_blank">
+            <img src= "assets/img/teralytic.jpg" class = "logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">R&D Intern</h4>
+            <h3 class="organization">Teralytic</h5>
+            <h4 class="date">May 2023 - Sept. 2023</h6>
+            <p class="description">
+              I did something.
+            </p>
+          </div>
+        </div>
+
+        <div class = "work-container">
+          <a href = "https://bisl.studentorg.berkeley.edu/" target = "_blank">
+            <img src= "assets/img/berk_eng.png" class = "logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">Undergraduate Researcher</h4>
+            <h3 class="organization">Berkeley Imaging Systems Laboratory</h5>
+            <h4 class="date">May 2023 - Sept. 2023</h6>
+            <p class="description">
+              I did something.
+            </p>
+          </div>
+        </div>
+
+        <div class = "work-container">
+          <a href = "https://tilabberkeley.com/" target = "_blank">
+            <img src= "assets/img/berk_eecs.jpg" class = "logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">Undergraduate Researcher</h4>
+            <h3 class="organization">Ti Lab</h5>
+            <h4 class="date">May 2023 - Sept. 2023</h6>
+            <p class="description">
+              I did something.
+            </p>
+          </div>
+        </div>
+
+        <div class = "work-container">
+          <a href = "https://citris-uc.org/" target = "_blank">
+            <img src= "assets/img/citris.png" class = "logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">Undergraduate Researcher</h4>
+            <h3 class="organization">CITRIS Institute</h5>
+            <h4 class="date">May 2023 - Sept. 2023</h6>
+            <p class="description">
+              I did something.
+            </p>
+          </div>
+        </div>
+
       </div>
+      <div class="spacer-bottom"></div>
     </section>
 
     <section id="education">
-      <div class = "work-container">
-          <a href = "https://www.berkeley.edu/" target = "_blank">
-              <img src="assets/img/berkeley.png" class = "link-icon" width="100" height="100">
-          </a>
-          <div class = "description-section">
-            <h4>M.S. in Electrical Engineering & Computer Science (EECS)</h4>
-            <h5>University of California - Berkeley</h5>
-            <h6>Aug. 2024 - May 2025</h6>
-          </div>
-      </div>
-      <div class = "work-container">
-          <a href = "https://www.berkeley.edu/" target = "_blank">
-              <img src="assets/img/berkeley.png" class = "link-icon" width="100" height="100">
-          </a>
-          <div class = "description-section">
-            <h4>B.S. in Electrical Engineering & Computer Science (EECS)</h4>
-            <h5>University of California - Berkeley</h5>
-            <h6>Aug. 2020 - May 2024</h6>
-            <div class = "job-responsibilities">
-              <p>
+      <h1 class="header">Education</h1>
+      <div class="hero">
+        <div class="work-container">
+            <a href = "https://www.berkeley.edu/" target = "_blank">
+                <img src="assets/img/berkeley.png" class="logo">
+            </a>
+            <div class="description-section">
+              <h4 class="position">M.S. in Electrical Engineering & Computer Science (EECS)</h4>
+              <h5 class="organization">University of California - Berkeley</h5>
+              <h6 class="date">Aug. 2024 - May 2025</h6>
+            </div>
+        </div>
+        <div class="work-container">
+            <a href="https://www.berkeley.edu/" target = "_blank">
+                <img src="assets/img/berkeley.png" class="logo">
+            </a>
+            <div class="description-section">
+              <h4 class="position">B.S. in Electrical Engineering & Computer Science (EECS)</h4>
+              <h5 class="organization">University of California - Berkeley</h5>
+              <h6 class="date">Aug. 2020 - May 2024</h6>
+              <p class="description">
                 GPA: 3.71
                 <br>
                 <br>
                 Activities: some things
               </p>
             </div>
-          </div>
+        </div>
       </div>
       <div id = "course-lang-flex">
         <div id = "courses">
@@ -299,7 +348,7 @@
     </section>
 
 
-    <br><br>
+    <br />
     <div>
 	     <a href="#top">Go To Top</a>
        <br><br>
