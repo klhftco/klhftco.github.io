@@ -17,6 +17,13 @@
   --clr-fg: #555;
   --pfp-size: 300;
   --logo-size: 100;
+
+  --clr-purple: #263E59;
+  --clr-red: #EB5E55;
+  --clr-gray: #C0D6DF;
+  --clr-darkgray: #6E8898;
+  --clr-blue: #30BCED;
+  --clr-white: #FFFFFF;
 }
 
 html {
@@ -43,7 +50,7 @@ body {
   font-weight: var(--body-font-weight);
   background-color: var(--clr-bg);
   line-height: 1.5;
-  color: var(--clr-fg);
+  color: var(--clr-purple);
   width: 100%;
 }
 
@@ -66,7 +73,33 @@ h4 {
 }
 
 section {
-  border: solid black 1px;
+  /* border:   solid black 1px; */
+}
+
+/*===============
+scrollbar styles
+===============*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--clr-gray);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--clr-darkgray);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-red);
 }
 
 /*===============
@@ -92,6 +125,11 @@ section styles
     height: 24px;
     top: calc(46 / 775 * 100vh);
     right: calc(30 / 1440 * 100vw);
+    color: var(--clr-darkgray);
+
+    a:hover {
+      color: var(--clr-red);
+    }
   }
 
   .nav_list {
@@ -119,18 +157,23 @@ section styles
     align-items: center;
   }
 
-  .hero .icon_list {
+  .hero .icon-bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: calc(180 / 1440 * 100vw);
+    gap: calc(30 / 1440 * 100vw);
+    /* width: calc(180 / 1440 * 100vw); */
     margin-top: calc(20 / 1440 * 100vw);
   }
 
   .hero .icon {
     width: calc(40 / 1440 * 100vw);
     height: auto;
+  }
+
+  .red {
+    color: var(--clr-red);
   }
 
   /* flag: remove when debugging borders are gone */
@@ -365,6 +408,109 @@ section styles
   border: none;
 }
 
+
+#footer {
+  height: 34vh;
+  width: 100%;
+
+  .hero {
+    position: relative;
+    min-height: calc(300 / 775 * 100vh);
+    display: flex;
+    flex-direction: row;
+
+    .scroll {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+
+      .icon {
+        width: 50px;
+        height: auto;
+      }
+    }
+
+    .tag {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: calc(100 / 1440 * 100vw);
+
+      h1 {
+        font-size: 48px;
+
+        .blue {
+          color: #30BCED;
+        }
+      }
+
+      .icon-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: calc(30 / 775 * 100vh);
+        margin-top: calc(30 / 775 * 100vh);
+
+        .logo {
+          width: 50px;
+        }
+        .icon {
+          width: 34px;
+        }
+      }
+    }
+
+    .nav {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: calc(25 / 775 * 100vh);
+      padding-left: calc(90 / 1440 * 100vw);
+
+      font-size: 20px;
+      font-family: var(--header-font-family);
+      font-weight: var(--header-font-weight);
+      color: var(--clr-darkgray);
+
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--clr-red);
+      }
+
+      .work {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: calc(80 / 1440 * 100vw);
+
+        .list {
+          display: flex;
+          flex-direction: column;
+          gap: calc(15 / 775 * 100vh);
+
+          font-weight: normal;
+        }
+      }
+
+    }
+  }
+
+  .credit {
+    min-height: 4vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C0D6DF;
+  }
+}
 /* ----------------------------------------- */
 
 
@@ -377,14 +523,27 @@ section styles
 }
 
 #project {
-  height: 150vh;
+  /* height: 150vh; */
+  /* min-height: 30vh; */
   text-align: center;
+  background-color: #30BCED;
+
+  .project {
+    min-height: 30vh;
+  }
+
+  .spacer-top {
+    height: 10vh;
+    background: #30BCED;
+    background: linear-gradient(0deg, #30BCED 0%, rgba(255,255,255,1) 100%);
+  }
+  .spacer-bottom {
+    height: 10vh;
+    background: #FFFFFF;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, #30BCED 100%);
+  }
 }
 
-#footer {
-  height: 6vh;
-  text-align: center;
-}
 
 /*===============
 section styles END
