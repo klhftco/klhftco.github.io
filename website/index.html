@@ -7,7 +7,9 @@
 		<meta name="keywords" content="Leo Huang, UC Berkeley">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" type = "image/svg+xml" href = "assets/img/logo-transparent.png">
+
     <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
     <link rel="alternate icon" href = "assets/img/favicon/favicon_ico.ico"> -->
     <!-- <link rel="stylesheet" href="assets/css/loading-screen-style.css">
@@ -322,25 +324,125 @@
 
     <section id="project">
       <div class="spacer-top"></div>
-      <br><br>
-      <h2 class="section__title">Personal Projects</h2>
-      <div class="project">
-        <div class="project__card" id="animation__container3">
-          <div>
-            <h4 id="venmo-integration">Venmo-Integration</h4>
-            <div class="project__content">
-              <img id="project__image" style="height: 140px;" src="images/tasa-logo.png" />
-            </div>
-            <i class="fas fa-chevron-down" style="margin-top: 30px;"></i>
+      <h2 class="header">Projects</h2>
+      <div class="hero">
+        <div class="project">
+          <div class="preview-container">
+            <img class="preview" src="assets/img/project/hume-poker.jpg" />
+          </div>
+          <div class="info-container">
+            <h3 class="title">Hume AI Poker Bot</h3>
+            <p class="stack">react / next.js / javascript / css</p>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+          <div class="description-container">
+            <p class="description">
+              Submission for UC Berkeley AI Hackathon 2024. <br />
+              An educational tool which uses Hume AI's Expression Measurement API to measure key emotions and return a metric that tells how a player might be performing emotionally.
+              Additionally, the bot also offers a tool to query GPT4 about the condition of the field, suggestions on how to play, and more.
+            </p>
+            <a href="https://devpost.com/software/poker-skill-rating-w-hume-ai">
+              <img class="link" src="assets/img/icon/devpost-purple.png" />
+            </a>
           </div>
         </div>
-        <div class="project__description none" id="animation__container4">
-          <i class="fas fa-chevron-up" style="margin-bottom: 10px;"></i>
-          <p class="project__desc">A web-portal for the Taiwanese American Student Association that queries and sorts through Venmo transactional data using Venmo API. Allows for keyword and date range searches that would filter the data. Saved the Treasurer 20+ hours of manual labor.</p>
-          <a href="https://github.com/j0nnn/Venmo-Integration" target="_blank" class="btn--icon link--icon">
-            <i class="fab fa-github"></i>
-          </a>
-          <p class="stack">Python | HTML | CSS | SQLite3</p>
+
+        <div class="project">
+          <div class="preview-container">
+            <img class="preview" src="assets/img/project/robotic-fluid.png" />
+          </div>
+          <div class="info-container">
+            <h3 class="title">Robotic Manipulation of Fluid Containers</h3>
+            <p class="stack">python / ROS / OpenCV</p>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+          <div class="description-container">
+            <p class="description">
+              Developed a physics model and planning scheme for estimating fluid in containers and pouring desired amounts using Rethink Robotics' Sawyer Arm and OpenCV.
+            </p>
+            <a href="https://drive.google.com/drive/u/1/folders/1a5G2iRMnJ9FI5Vs595J5iB74GcbzpOwo">
+              <img class="link" src="assets/img/icon/link-purple.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="preview-container">
+            <img class="preview" src="assets/img/project/spatial-bear.png" />
+          </div>
+          <div class="info-container">
+            <h3 class="title">Spatial Keyframing a Bear</h3>
+            <p class="stack">c++</p>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+          <div class="description-container">
+            <p class="description">
+              Implemented a rasterizer with antialiasing and texture mapping, mesh editor that builds Bezier surfaces and manipulates triangle meshes, physically-based renderer using path tracing to generate realistic images, and real-time simulation of cloth.
+              Additionally, created animation framework based on spatial keyframing research.
+            </p>
+            <a href="https://drive.google.com/drive/u/1/folders/1J8Q7gcaVvXdyMqH_7gfxKKtXWhG9j0st">
+              <img class="link" src="assets/img/icon/link-purple.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="preview-container">
+            <img class="preview" src="assets/img/project/robotic-property.png" />
+          </div>
+          <div class="info-container">
+            <h3 class="title">Robotic Manipulation of Variable Properties</h3>
+            <p class="stack">python / ROS / UR5</p>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+          <div class="description-container">
+            <p class="description">
+              Developed a planning scheme for estimating different objects' rigidity and moving them between two points using Universal Robots UR5 Arm, Robotiq 2F-140 Gripper, and ATI Axia80 Force/Torque Sensor.
+            </p>
+            <a href="https://drive.google.com/drive/u/1/folders/1eETKwLKN7xu8juJ8k5U_gDKL15VNJSwa">
+              <img class="link" src="assets/img/icon/link-purple.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="preview-container">
+            <img class="preview" src="assets/img/project/surface-emg.png" />
+          </div>
+          <div class="info-container">
+            <h3 class="title">Surface EMG Sensor</h3>
+            <p class="stack">arduino / c++ / signal processing</p>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+          <div class="description-container">
+            <p class="description">
+              Designed and built a surface electromyography (EMG) data-acquisition sensor to detect fist formation and finger-specific movement.
+            </p>
+            <a href="https://docs.google.com/presentation/d/1E5rahMeKjW63RN7B3IWRrunA9bsv0NtRK1gECeixDYE/edit#slide=id.p">
+              <img class="link" src="assets/img/icon/link-purple.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="preview-container">
+            <img class="preview" src="assets/img/project/venmo-integration.png" />
+          </div>
+          <div class="info-container">
+            <h3 class="title">Venmo Integration</h3>
+            <p class="stack">python / html / css / SQLite3</p>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+          <div class="description-container">
+            <p class="description">
+              A web-portal for the Taiwanese American Student Association that queries and sorts through Venmo transactional data using Venmo API.
+              Allows for keyword and date range searches that would filter the data.
+              Saved the Treasurer 20+ hours of manual labor.
+            </p>
+            <a href="https://github.com/j0nnn/Venmo-Integration">
+              <img class="link" src="assets/img/icon/github-purple.png" />
+            </a>
+          </div>
         </div>
       </div>
       <div class="spacer-bottom"></div>
