@@ -7,7 +7,7 @@
 		<meta name="keywords" content="Leo Huang, UC Berkeley">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type = "image/svg+xml" href = "assets/img/logo-transparent.png">
 
     <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
@@ -29,34 +29,19 @@
     <section id="home">
       <img class="logo" src="assets/img/icon/logo-purple.png" />
       <nav class="nav">
-        <ul class="nav_list">
-          <li class="nav_list-item">
-            <a class="link link--nav" href="#home">home</a>
-          </li>
-          <li class="nav_list-item">
-            <a class="link link--nav" href="#about">about me</a>
-          </li>
-          <li class="nav_list-item">
-            <a class="link link--nav" href="#experience">experiences</a>
-          </li>
-          <li class="nav_list-item">
-            <a class="link link--nav" href="#education">education</a>
-          </li>
-          <li class="nav_list-item">
-            <a class="link link--nav" href="#project">projects</a>
-          </li>
-          <li class="nav_list-item">
-            <a class="link link--nav"
-              href="http://tinyurl.com/leo-huang-resume">résumé</a>
-          </li>
-          <li class="nav_list-item">
-            <button type="button" aria-label="toggle theme" class="btn btn--icon">
-              <i id="btn-theme" class="fas fa-moon"></i>
-            </button>
-          </li>
-        </ul>
-        <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
-          <i class="fas fa-bars"></i>
+        <div class="nav-list">
+          <a class="link" href="#home" >home</a>
+          <a class="link" href="#about">about</a>
+          <a class="link" href="#experience">experience</a>
+          <a class="link" href="#education">education</a>
+          <a class="link" href="#project">projects</a>
+          <a class="link" href="http://tinyurl.com/leo-huang-resume">résumé</a>
+          <!-- <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <i id="btn-theme" class="fa-solid fa-moon"></i>
+          </button> -->
+        </div>
+        <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger hide">
+          <i class="fa-solid fa-bars"></i>
         </button>
       </nav>
       <div class="hero">
@@ -89,19 +74,19 @@
         <div class="profile-text">
           <h4>aspiring software robotics engineer based in the Bay</h4><br/>
           <h4>looking for opportunities to dive into robotics, ML, and biomimetics</h4><br/>
-          <h4>currently: researching DNA origami in the Ti Lab @ UC Berkeley</h4><br/>
-          <h4>driven by: exploring! biomimetic robotics, machine learning, and programming</h4><br/>
+          <h4><span class="red">currently:</span> researching DNA origami in the Ti Lab @ UC Berkeley</h4><br/>
+          <h4><span class="red">driven by:</span> exploring! biomimetic robotics, machine learning, and programming</h4><br/>
         </div>
       </div>
     </section>
 
     <section id="experience">
       <div class="spacer-top"></div>
-      <h1 class="header">Experiences</h1>
+      <h1 class="header">Experience</h1>
       <div class="hero">
         <div class = "work-container">
           <a href = "https://www.kla.com/" target = "_blank">
-            <img src= "assets/img/logo/kla.jpg" class = "logo">
+            <img src= "assets/img/logo/kla.jpg" class="logo">
           </a>
           <div class="description-container">
             <h2 class="position">Systems Software Engineering Intern</h4>
@@ -217,7 +202,7 @@
             <a href = "https://www.berkeley.edu/" target = "_blank">
                 <img src="assets/img/logo/berkeley.png" class="logo">
             </a>
-            <div class="description-section">
+            <div class="description-container">
               <h4 class="position">M.S. in Electrical Engineering & Computer Science (EECS)</h4>
               <h5 class="organization">University of California - Berkeley</h5>
               <h6 class="date">Aug. 2024 - May 2025</h6>
@@ -227,7 +212,7 @@
             <a href="https://www.berkeley.edu/" target = "_blank">
                 <img src="assets/img/logo/berkeley.png" class="logo">
             </a>
-            <div class="description-section">
+            <div class="description-container">
               <h4 class="position">B.S. in Electrical Engineering & Computer Science (EECS)</h4>
               <h5 class="organization">University of California - Berkeley</h5>
               <h6 class="date">Aug. 2020 - May 2024</h6>
@@ -239,85 +224,59 @@
               </p>
             </div>
         </div>
-      </div>
-      <div id = "course-lang-flex">
-        <div id = "courses">
-            <div class = "section-heading">
-                <div class = "first section-line"></div>
-                <h3 class = "section-text-name">Coursework</h3>
-                <div class = "second section-line"></div>
-            </div>
-            <div id = "coursework-container" class = "left-fade">
-                <p><b>CS 61A</b> - The Structure & Interpretation of Computer Programs</p>
-                <p><b>CS 61B</b> - Data Structures</p>
-                <p><b>CS 61C</b> - Computer Architecture & Machine Structures</p>
-                <p><b>CS 70</b> - Discrete Mathematics & Probability Theory</p>
-                <p><b>CS 161</b> - Computer Security</p>
-                <p><b>CS 162</b> - Operating Systems</p>
-                <p><b>CS 170</b> - Efficient Algorithms & Intractable Problems</p>
-                <p><b>CS 186</b> - Database Systems</p>
-                <p><b>CS 198</b> - Web Design DeCal</p>
-                <p><b>CS 375</b> - Teaching Techniques in Computer Science</p>
-                <p><b>EECS 16A</b> - Designing Information Devices & Systems I</p>
-                <p><b>EECS 16B</b> - Designing Information Devices & Systems II</p>
-                <p><b>DATA 8</b> - Foundations of Data Science</p>
-                <p><b>DATA 100</b> - Principles and Techniques of Data Science</p>
+        <div class="work-container">
+            <a href = "https://www.berkeley.edu/" target = "_blank">
+                <img src="assets/img/logo/berkeley.png" class = "link-icon logo">
+            </a>
+            <div class = "description-container">
+              <h4>B.S. in Bioengineering</h4>
+              <h5>University of California - Berkeley</h5>
+              <h6>Aug. 2020 - May 2024</h6>
+              <div class = "job-responsibilities">
+                <p>
+                  GPA: 3.71
+                  <br>
+                  <br>
+                  Activities: some things
+                </p>
+              </div>
             </div>
         </div>
-      </div>
-      <div class = "work-container">
-          <a href = "https://www.berkeley.edu/" target = "_blank">
-              <img src="assets/img/logo/berkeley.png" class = "link-icon" width="100" height="100">
-          </a>
-          <div class = "description-section">
-            <h4>B.S. in Bioengineering</h4>
-            <h5>University of California - Berkeley</h5>
-            <h6>Aug. 2020 - May 2024</h6>
-            <div class = "job-responsibilities">
-              <p>
-                GPA: 3.71
-                <br>
-                <br>
-                Activities: some things
-              </p>
-            </div>
+        <div id = "course-lang-flex">
+          <div id = "courses">
+              <div class = "container-heading">
+                  <div class = "first section-line"></div>
+                  <h3 class = "section-text-name">Coursework</h3>
+                  <div class = "second section-line"></div>
+              </div>
+              <div id = "coursework-container" class = "left-fade">
+                  <p><b>CS 61A</b> - The Structure & Interpretation of Computer Programs</p>
+                  <p><b>CS 61B</b> - Data Structures</p>
+                  <p><b>CS 61C</b> - Computer Architecture & Machine Structures</p>
+                  <p><b>CS 70</b> - Discrete Mathematics & Probability Theory</p>
+                  <p><b>CS 161</b> - Computer Security</p>
+                  <p><b>CS 162</b> - Operating Systems</p>
+                  <p><b>CS 170</b> - Efficient Algorithms & Intractable Problems</p>
+                  <p><b>CS 186</b> - Database Systems</p>
+                  <p><b>CS 198</b> - Web Design DeCal</p>
+                  <p><b>CS 375</b> - Teaching Techniques in Computer Science</p>
+                  <p><b>EECS 16A</b> - Designing Information Devices & Systems I</p>
+                  <p><b>EECS 16B</b> - Designing Information Devices & Systems II</p>
+                  <p><b>DATA 8</b> - Foundations of Data Science</p>
+                  <p><b>DATA 100</b> - Principles and Techniques of Data Science</p>
+              </div>
           </div>
-      </div>
-      <div id = "course-lang-flex">
-        <div id = "courses">
-            <div class = "section-heading">
-                <div class = "first section-line"></div>
-                <h3 class = "section-text-name">Coursework</h3>
-                <div class = "second section-line"></div>
-            </div>
-            <div id = "coursework-container" class = "left-fade">
-                <p><b>CS 61A</b> - The Structure & Interpretation of Computer Programs</p>
-                <p><b>CS 61B</b> - Data Structures</p>
-                <p><b>CS 61C</b> - Computer Architecture & Machine Structures</p>
-                <p><b>CS 70</b> - Discrete Mathematics & Probability Theory</p>
-                <p><b>CS 161</b> - Computer Security</p>
-                <p><b>CS 162</b> - Operating Systems</p>
-                <p><b>CS 170</b> - Efficient Algorithms & Intractable Problems</p>
-                <p><b>CS 186</b> - Database Systems</p>
-                <p><b>CS 198</b> - Web Design DeCal</p>
-                <p><b>CS 375</b> - Teaching Techniques in Computer Science</p>
-                <p><b>EECS 16A</b> - Designing Information Devices & Systems I</p>
-                <p><b>EECS 16B</b> - Designing Information Devices & Systems II</p>
-                <p><b>DATA 8</b> - Foundations of Data Science</p>
-                <p><b>DATA 100</b> - Principles and Techniques of Data Science</p>
-            </div>
         </div>
       </div>
-    </section>
-
-    <section id="skills">
-      <br><br>
-      <h3>Skills</h3>
-      <div id = "languages">
-        <div id = "languages-container" class = "right-fade">
-          <p><b>Languages</b> - Java, Python, Swift, C, HTML, CSS, Javascript, Typescript, SQL, R, RISC-V Assembly, x86 Assembly</p>
-          <p><b>Frameworks / Libraries</b> - React.js, Redux, Next.js, MaterialUI, Blueprint.js, SwiftUI, XCTest, Chai.js, NumPy, Pandas, JUnit, Selenium Webdriver, Matplotlib, Seaborn, Sklearn, Pygame, JavaFX</p>
-          <p><b>Tools</b> - Bash Scripting, Git, GitHub, Figma, Postman, Microsoft Azure, Kubernetes, AWS, Docker, Makefile, Firebase</p>
+      <div>
+        <br><br>
+        <h3>Skills</h3>
+        <div id = "languages">
+          <div id = "languages-container" class = "right-fade">
+            <p><b>Languages</b> - Java, Python, Swift, C, HTML, CSS, Javascript, Typescript, SQL, R, RISC-V Assembly, x86 Assembly</p>
+            <p><b>Frameworks / Libraries</b> - React.js, Redux, Next.js, MaterialUI, Blueprint.js, SwiftUI, XCTest, Chai.js, NumPy, Pandas, JUnit, Selenium Webdriver, Matplotlib, Seaborn, Sklearn, Pygame, JavaFX</p>
+            <p><b>Tools</b> - Bash Scripting, Git, GitHub, Figma, Postman, Microsoft Azure, Kubernetes, AWS, Docker, Makefile, Firebase</p>
+          </div>
         </div>
       </div>
     </section>
@@ -352,7 +311,7 @@
             <img class="preview" src="assets/img/project/robotic-fluid.png" />
           </div>
           <div class="info-container">
-            <h3 class="title">Robotic Manipulation of Fluid Containers</h3>
+            <h3 class="title">Robotic Manipulation of Fluids</h3>
             <p class="stack">python / ROS / OpenCV</p>
           </div>
           <i class="fas fa-chevron-down"></i>
@@ -391,7 +350,7 @@
             <img class="preview" src="assets/img/project/robotic-property.png" />
           </div>
           <div class="info-container">
-            <h3 class="title">Robotic Manipulation of Variable Properties</h3>
+            <h3 class="title">Robotic Manipulation of Variable Props</h3>
             <p class="stack">python / ROS / UR5</p>
           </div>
           <i class="fas fa-chevron-down"></i>
