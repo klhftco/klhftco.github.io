@@ -357,6 +357,218 @@ section styles
   }
 }
 
+#education {
+  background-color: var(--clr-white);
+
+  .header {
+    text-align: center;
+    padding-top: calc(40 / 775 * 100vh);
+    padding-bottom: calc(60 / 775 * 100vh);
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: calc(20 / 775 * 100vh);
+    padding: 4vw;
+    padding-top: 0;
+  }
+
+  .work-container {
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* color: var(--clr-white); */
+    background-color: var(--clr-darkgray);
+    position: relative;
+
+    .base {
+      /* min-height: calc(217 / 775 * 100vh); */
+      width: 100%;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      color: var(--clr-white);
+      background-color: var(--clr-darkgray);
+      margin-bottom: calc(30 / 775 * 100vh);
+      padding: 20px 0 20px 0;
+      position: relative;
+
+      .logo-container {
+        /* width: calc(var(--logo-size) / 1440 * 100vw); */
+        /* height: calc(var(--logo-size) / 775 * 100vh); */
+        width: 11.5vw;
+        height: 8vw;
+        padding: 0;
+        background-color: none;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .logo {
+          height: 100%;
+        }
+      }
+
+      .description-container {
+        width: 75%;
+        line-height: normal;
+
+        .position {
+          font-size: 24px;
+          font-weight: bold;
+        }
+        .organization {
+          font-size: 20px;
+          font-weight: normal;
+        }
+        .date {
+          font-size: 16px;
+          font-weight: normal;
+        }
+      }
+
+    }
+
+    .description {
+      display: flex;
+      background-color: var(--clr-gray);
+      width: 95%;
+      border-radius: 20px;
+      height: 0vh;
+      padding: 0px;
+      transition: height 0.4s, padding 0.4s, margin 0.4s;
+      overflow: hidden;
+
+      /* margin-top: calc(-0.025 * .7 * 100vw);
+      margin-bottom: calc(0.025 * .7 * 100vw); */
+      margin: calc(-0.025 * .7 * 100vw) 0 0 0;
+
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-end;
+      gap: 50px;
+
+      .coursework {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .icon {
+          height: 70px;
+          margin-bottom: 5px;
+        }
+        .title {
+          font-size: 20px;
+        }
+        .list-container {
+          width: 100%;
+          line-height: normal;
+          list-style-position: inside;
+          padding-left: 50px;
+
+          li {
+            font-size: 12px;
+          }
+        }
+      }
+      .activity {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .icon {
+          height: 90px;
+          margin-top: -5px;
+          margin-bottom: -10px;
+        }
+        .title {
+          font-size: 20px;
+        }
+        .list-container {
+          width: 100%;
+          line-height: normal;
+          list-style-position: inside;
+          padding-left: 30px;
+
+          li {
+            font-size: 12px;
+          }
+        }
+      }
+      .spacer {
+        width: 10%;
+      }
+    }
+    #skills {
+      .coursework {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .icon {
+          height: 70px;
+          margin-bottom: 5px;
+        }
+        .title {
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+        .list-container {
+          width: 100%;
+          line-height: normal;
+          /* list-style-position: inside; */
+          padding-left: 50px;
+
+          li {
+            list-style: none;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    i {
+      position: absolute;
+      top: 70px;
+      right: 30px;
+      transform: scale(1.5);
+      transition: transform 0.4s;
+    }
+    i:active {
+      transform: rotateX(180deg) scale(1.5);
+    }
+    i:active ~ .description {
+      height: 40vh;
+      padding: 20px;
+      margin: calc(-0.025 * .7 * 100vw) 0 calc(0.025 * .7 * 100vw) 0;
+    }
+    i:active ~ #eecs {
+      height: 50vh;
+      padding: 20px;
+      margin: calc(-0.025 * .7 * 100vw) 0 calc(0.025 * .7 * 100vw) 0;
+    }
+    i:active ~ #skills {
+      height: 35vh;
+      padding: 20px;
+      margin: calc(-0.025 * .7 * 100vw) 0 calc(0.025 * .7 * 100vw) 0;
+    }
+  }
+}
 
 #project {
   min-height: 30vh;
@@ -591,73 +803,6 @@ section styles
 
 
 
-#education {
-  background-color: var(--clr-white);
-
-  .header {
-    text-align: center;
-    padding-top: calc(40 / 775 * 100vh);
-    padding-bottom: calc(60 / 775 * 100vh);
-  }
-
-  .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: calc(30 / 775 * 100vh);
-    padding: 4vw;
-    padding-top: 0;
-  }
-
-  .work-container {
-    width: 70%;
-    /* min-height: calc(217 / 775 * 100vh); */
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--clr-darkgray);
-    margin-bottom: calc(30 / 775 * 100vh);
-    padding: 20px 0 20px 0;
-
-    .logo {
-      /* width: calc(var(--logo-size) / 1440 * 100vw); */
-      /* height: calc(var(--logo-size) / 775 * 100vh); */
-      height: 11.5vw;
-      border-radius: 10px;
-    }
-
-    .description-container {
-      width: 75%;
-      line-height: normal;
-
-      .position {
-        font-size: 24px;
-        font-weight: bold;
-      }
-      .organization {
-        font-size: 20px;
-        font-weight: normal;
-      }
-      .date {
-        font-size: 16px;
-        font-weight: normal;
-      }
-      .description {
-        font-size: 16px;
-        font-weight: normal;
-        line-height: 1.5;
-
-        margin-top: 10px;
-      }
-    }
-  }
-
-  /* flag: remove when done with debug borders */
-  border: none;
-}
 
 /*===============
 section styles END
