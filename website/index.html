@@ -6,14 +6,16 @@
     <meta name="description" content="Leo Huang portfolio">
 		<meta name="keywords" content="Leo Huang, UC Berkeley">
 
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <!-- <link rel = "icon" type = "image/svg+xml" href = "assets/img/favicon/favicon_svg.svg">
-    <link rel = "alternate icon" href = "assets/img/favicon/favicon_ico.ico">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01"> -->
-    <link rel="stylesheet" href="assets/css/loading-screen-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type = "image/svg+xml" href = "assets/img/logo-transparent.png">
+
+    <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
+    <link rel="alternate icon" href = "assets/img/favicon/favicon_ico.ico"> -->
+    <!-- <link rel="stylesheet" href="assets/css/loading-screen-style.css">
     <link rel="stylesheet" href="assets/css/homepage-style.css">
     <link rel="stylesheet" href="assets/css/about-me-style.css">
-    <link rel="stylesheet" href="assets/css/experience-style.css">
+    <link rel="stylesheet" href="assets/css/experience-style.css"> -->
 
     <title>klhftco</title>
   </head>
@@ -23,179 +25,609 @@
         <div class = "ring one"></div>
         <div class = "ring two"></div>
     </section> -->
-    <section id = "about-me">
-                <h1 id = "about-me-header">About Me</h1>
-                <div class = "graphic-container left-fade" id = "cs-graphics">
-                    <img src="assets/img/about_graphics/computer_graphic.svg" id = "computer-graphic">
-                    <img src="assets/img/about_graphics/webpage_graphic.svg" id = "website-graphic">
-                </div>
-                <p id = "cs-description" class= "left-fade">
-                    I’m a UC Berkeley alum who majored in Computer Science and minored in Data Science.
-                    I’m a self-motivated learner and enjoy exploring my passion for programming
-                    through industry experiences, contract work, and personal projects.
-                </p>
-                <div class = "graphic-container right-fade" id = "life-graphics">
-                    <img src="assets/img/about_graphics/tennis_graphic.svg" id = "tennis-graphic">
-                    <img id = "boba" src="assets/img/about_graphics/boba_graphic.svg" id = "boba-graphic">
-                </div>
-                <div id = "dividing-line"></div>
-                <p id = "life-description" class = "right-fade">
-                    I’ve grown up in the Bay Area, and in my free time, I like to play tennis,
-                    basketball, and spikeball. I also love watching K-Dramas and eating ramen.
-                </p>
-                <div id = "particles-about"></div>
-            </section>
 
-            <section id = "experience">
-                <h1>Experience</h1>
-                <div class = "section-heading">
-                    <div class = "first section-line"></div>
-                    <h3 class = "section-text-name">Work</h3>
-                    <div class = "second section-line"></div>
-                </div>
-                <div class = "work-container">
-                    <a href = "https://ziphq.com/" target = "_blank">
-                        <img src="assets/img/link_icon.svg" class = "link-icon">
-                    </a>
-                    <img src= "assets/img/work_experience/zip.svg" class = "company-logo" id = "zip-logo">
-                    <div class = "logo-description-dividing-line"></div>
-                    <div class = "description-section">
-                        <h4>Software Engineering Intern</h4>
-                        <h5>Zip - Infrastructure Team</h5>
-                        <h6>June 2023 - Aug. 2023</h6>
-                        <div class = "job-responsibilities">
-                            <p>
-                                Automated the creation and management of cloud-hosted development environments for 70+ engineers using Bash Scripting, SSH tunneling,
-                                and AWS (EC2, VPC, Cloudwatch). Launched EC2 instances with pre-installed dependencies directly in Zip's VPC, reducing developer setup
-                                time by 95% and allowing engineers to seamlessly access the VPC's stateful services (ElasticSearch Clusters, MySQL DB). Implemented a
-                                cost-saving Cloudwatch alarm system that automatically stops EC2 instances with low CPU utilization. Reduced ElasticSearch reindex time,
-                                using database sharding to split up work and parallel Kubernetes pods to process work efficiently. Leveraged job duration logs stored
-                                in AWS S3 to dynamically rebalance job assignments for parallel workers, distributing work evenly.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class = "section-heading">
-                    <div class = "first section-line"></div>
-                    <h3 class = "section-text-name">Education</h3>
-                    <div class = "second section-line"></div>
-                </div>
-                <div class = "work-container">
-                    <a href = "https://www.berkeley.edu/" target = "_blank">
-                        <img src="assets/img/link_icon.svg" class = "link-icon">
-                    </a>
-                    <img src= "assets/img/work_experience/berkeley.png" class = "company-logo" id = "zip-logo">
-                    <div class = "logo-description-dividing-line"></div>
-                    <div class = "description-section">
-                        <h4>B.A. in Computer Science, Minor in Data Science</h4>
-                        <h5>University of California - Berkeley</h5>
-                        <h6>Aug. 2020 - Dec. 2023</h6>
-                        <div class = "job-responsibilities">
-                            <p>
-                                GPA: 4.00
-                                <br>
-                                <br>
-                                Activities: Berkeley Codebase, Cal Blueprint, CS 186 - Database Systems (uGSI), CS 198 - Web Design DeCal (Instructor), CS 61A - The Structure & Interpretation of Computer Programs (Academic Intern),
-                                CS 170 - Efficient Algorithms & Intractable Problems (Reader), Data 8 - Foundations of Data Science (Academic Intern)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div id = "course-lang-flex">
-                    <div id = "courses">
-                        <div class = "section-heading">
-                            <div class = "first section-line"></div>
-                            <h3 class = "section-text-name">Coursework</h3>
-                            <div class = "second section-line"></div>
-                        </div>
-                        <div id = "coursework-container" class = "left-fade">
-                            <p><b>CS 61A</b> - The Structure & Interpretation of Computer Programs</p>
-                            <p><b>CS 61B</b> - Data Structures</p>
-                            <p><b>CS 61C</b> - Computer Architecture & Machine Structures</p>
-                            <p><b>CS 70</b> - Discrete Mathematics & Probability Theory</p>
-                            <p><b>CS 161</b> - Computer Security</p>
-                            <p><b>CS 162</b> - Operating Systems</p>
-                            <p><b>CS 170</b> - Efficient Algorithms & Intractable Problems</p>
-                            <p><b>CS 186</b> - Database Systems</p>
-                            <p><b>CS 198</b> - Web Design DeCal</p>
-                            <p><b>CS 375</b> - Teaching Techniques in Computer Science</p>
-                            <p><b>EECS 16A</b> - Designing Information Devices & Systems I</p>
-                            <p><b>EECS 16B</b> - Designing Information Devices & Systems II</p>
-                            <p><b>DATA 8</b> - Foundations of Data Science</p>
-                            <p><b>DATA 100</b> - Principles and Techniques of Data Science</p>
-                        </div>
-                    </div>
-                    <div id = "languages">
-                        <div class = "section-heading" id = "languages-heading">
-                            <div class = "first section-line" id = "languages-line"></div>
-                            <h3 class = "section-text-name">Languages & Tools</h3>
-                            <div class = "second section-line"></div>
-                        </div>
-                        <div id = "languages-container" class = "right-fade">
-                            <p><b>Languages</b> - Java, Python, Swift, C, HTML, CSS, Javascript, Typescript, SQL, R, RISC-V Assembly, x86 Assembly</p>
-                            <p><b>Frameworks / Libraries</b> - React.js, Redux, Next.js, MaterialUI, Blueprint.js, SwiftUI, XCTest, Chai.js, NumPy, Pandas, JUnit, Selenium Webdriver, Matplotlib, Seaborn, Sklearn, Pygame, JavaFX</p>
-                            <p><b>Tools</b> - Bash Scripting, Git, GitHub, Figma, Postman, Microsoft Azure, Kubernetes, AWS, Docker, Makefile, Firebase</p>
-                        </div>
-                    </div>
-                </div>
+    <section id="home">
+      <img class="logo" src="assets/img/icon/logo-purple.png" />
+      <nav class="nav">
+        <div class="nav-list">
+          <a class="link" href="#home" >home</a>
+          <a class="link" href="#about">about</a>
+          <a class="link" href="#experience">experience</a>
+          <a class="link" href="#education">education</a>
+          <a class="link" href="#project">projects</a>
+          <a class="link" href="http://tinyurl.com/leo-huang-resume">résumé</a>
+          <!-- <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <i id="btn-theme" class="fa-solid fa-moon"></i>
+          </button> -->
+        </div>
+        <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger hide">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <div class="hero">
+        <h1>Hi, I'm <span class="red">Leo</span>!</h1>
+        <h3>BioE and EECS @ UC Berkeley.</h3>
+        <div class="icon-bar">
+          <a href="https://www.linkedin.com/in/huangleo00/">
+            <img class="icon" src="assets/img/icon/linkedin-purple.png" /></a>
+          <a href="https://devpost.com/klhftco">
+            <img class="icon" src="assets/img/icon/devpost-purple.png" /></a>
+          <a href="https://github.com/klhftco">
+            <img class="icon" src="assets/img/icon/github-purple.png" /></a>
+          <a href="mailto:klhftco@berkeley.edu">
+            <img class="icon" src="assets/img/icon/email-purple.png" /></a>
+        </div>
+      </div>
+    </section>
 
-                <div class = "section-heading">
-                    <div class = "first section-line"></div>
-                    <h3 class = "section-text-name">Personal Projects</h3>
-                    <div class = "second section-line"></div>
-                </div>
-                <div class = "project-flex">
-                    <div class = "project-container left-fade">
-                        <div class = "project-name">Java VCS</div>
-                        <div class = "project-subheading">
-                            <div>July 2021</div>
-                            <div class = "language-tag">
-                                Java
-                            </div>
-                            <div class = "language-tag">
-                                Git
-                            </div>
-                        </div>
-                        <img class = "project-image" src="assets/img/projects/java-vcs.webp">
-                        <div class = "project-description hidden" id = "java-vcs-description">
-                            <b>A Version Control System built with Java that mimics Git’s functionality, supporting commands like commit, branch, merge, and checkout.</b>
-                            <br>
-                            <br>
-                            Contains a SHA-1 file hashing system that uses serialization to efficiently persist file data in blobs.
-                            Navigates through commit history and merges branches together using tree traversals.
-                        </div>
-                        <img class = "arrow" src="assets/img/projects/arrow.svg">
-                    </div>
-                    <div class = "project-container right-fade">
-                        <a href = "https://stevenhuang010.github.io/Sorting-Illustrator" target = "_blank">
-                            <img src="assets/img/link_icon.svg" class = "link-icon link-project">
-                        </a>
-                        <div class = "project-name">Sorting Visualizer</div>
-                        <div class = "project-subheading">
-                            <div>June 2021</div>
-                            <div class = "language-tag">
-                                React.js
-                            </div>
-                            <div class = "language-tag">
-                                CSS
-                            </div>
-                        </div>
-                        <img class = "project-image" src="assets/img/projects/sorting.png">
-                        <div class = "project-description hidden">
-                            <b>A web application that helps users visualize and understand how certain sorting algorithms work.</b>
-                            <br>
-                            <br>
-                            Implemented algorithms include: Bubble Sort, Insertion Sort, Selection Sort, Merge Sort, Quick Sort, Heap Sort, Shell Sort, and Counting Sort.
-                        </div>
-                        <img class = "arrow" src="assets/img/projects/arrow.svg">
-                    </div>
-            </section>
-    <div>
-	     <a href="/button/index.html">Other Work (Button)</a>
-       <br><br>
-       <a href="/website/index.html">My Website (wip)</a>
-       <br><br>
-    </div>
+    <section id="about">
+      <h1 class="header">About Me</h1>
+      <div class="hero">
+        <div class="profile-container">
+          <img class="profile-dec" src="assets/img/profile-dec.png" />
+          <div class="profile-border">
+            <div class="profile-mask">
+              <img class="profile-pic" src="assets/img/leo.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="profile-text">
+          <h4 class="intro">
+            Hi! I'm <span class="blue bold">Leo</span>,
+            an aspiring <span class="blue bold">robotics software engineer</span> based in the Bay that loves to explore.
+            Currently a Master's student, I'm always keen for opportunities to dive into robotics, ML, and biomimetics. Let's connect!
+          </h4>
+          <!-- <br class="spacer"/> -->
+          <h4><span class="red bold">currently:</span> researching DNA origami in the Ti Lab @ UC Berkeley</h4>
+          <!-- <br class="spacer"/> -->
+          <h4><span class="red bold">driven by:</span> biomimetic robotics, machine learning, and programming</h4>
+          <!-- <br class="spacer"/> -->
+          <div class="icon-bar">
+            <img class="icon" src="assets/img/icon/robot.png" />
+            <img class="icon" src="assets/img/icon/brain.png" />
+            <img class="icon" src="assets/img/icon/dna.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="spacer-top"></div>
+      <h1 class="header">Experience</h1>
+      <div class="hero">
+        <div class = "work-container">
+          <a href = "https://www.kla.com/" target = "_blank">
+            <img src= "assets/img/logo/kla.jpg" class="logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">Systems Software Engineering Intern</h4>
+            <h3 class="organization">KLA - RAPID Division</h5>
+            <h4 class="date">May 2023 - Sept. 2023</h6>
+            <p class="description">
+              Utilized C#, .NET Framework, WPF, and MySQL to develop database tools for system engineers to better diagnose and analyze anomalies in system behavior, reducing debugging time by 90%.
+              Deployed 4 new interactive database features to aid equipment diagnostics and analysis, allowing system engineers to better identify correlations during development.
+              Optimized SQL queries for database application, achieving near 100-fold improvement in query speed, ensuring engineers can seamlessly interact with the database.
+            </p>
+            <!-- Automated the creation and management of cloud-hosted development environments for 70+ engineers using Bash Scripting, SSH tunneling,
+            and AWS (EC2, VPC, Cloudwatch). Launched EC2 instances with pre-installed dependencies directly in Zip's VPC, reducing developer setup
+            time by 95% and allowing engineers to seamlessly access the VPC's stateful services (ElasticSearch Clusters, MySQL DB). Implemented a
+            cost-saving Cloudwatch alarm system that automatically stops EC2 instances with low CPU utilization. Reduced ElasticSearch reindex time,
+            using database sharding to split up work and parallel Kubernetes pods to process work efficiently. Leveraged job duration logs stored
+            in AWS S3 to dynamically rebalance job assignments for parallel workers, distributing work evenly. -->
+          </div>
+        </div>
+
+        <div class = "work-container">
+          <a href = "https://berkeleytime.com/" target = "_blank">
+            <img src= "assets/img/logo/berkeleytime.jpg" class = "logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">Frontend Developer</h4>
+            <h3 class="organization">Berkeleytime</h5>
+            <h4 class="date">Jan 2024 - Present</h6>
+            <p class="description">
+              I did something.
+            </p>
+          </div>
+        </div>
+
+        <div class = "work-container">
+          <a href = "https://tilabberkeley.com/" target = "_blank">
+            <img src= "assets/img/logo/berk_eecs_blue2.png" class = "logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">Undergraduate Researcher</h4>
+            <h3 class="organization">Ti Lab</h5>
+            <h4 class="date">Aug 2023 - Present</h6>
+            <p class="description">
+              I did something.
+            </p>
+          </div>
+        </div>
+
+        <div class = "work-container">
+          <a href = "https://bisl.studentorg.berkeley.edu/" target = "_blank">
+            <img src= "assets/img/logo/bisl.jpg" class = "logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">Undergraduate Researcher</h4>
+            <h3 class="organization">Berkeley Imaging Systems Laboratory</h5>
+            <h4 class="date">May 2023 - Jan. 2024</h6>
+            <p class="description">
+              I did something.
+            </p>
+          </div>
+        </div>
+
+        <div class = "work-container">
+          <a href = "https://www.jbei.org/" target = "_blank">
+            <img src= "assets/img/logo/jbei.jpg" class = "logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">Undergraduate Researcher</h4>
+            <h3 class="organization">Joint BioEnergy Institute</h5>
+            <h4 class="date">Jan 2023 - May 2024</h6>
+            <p class="description">
+              I did something.
+            </p>
+          </div>
+        </div>
+
+        <div class = "work-container">
+          <a href = "https://teralytic.com/" target = "_blank">
+            <img src= "assets/img/logo/teralytic.jpg" class = "logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">R&D Intern</h4>
+            <h3 class="organization">Teralytic</h5>
+            <h4 class="date">Jan 2023 - Present</h6>
+            <p class="description">
+              I did something.
+            </p>
+          </div>
+        </div>
+
+        <div class = "work-container">
+          <a href = "https://citris-uc.org/" target = "_blank">
+            <img src= "assets/img/logo/citris.png" class = "logo">
+          </a>
+          <div class="description-container">
+            <h2 class="position">Undergraduate Researcher</h4>
+            <h3 class="organization">CITRIS Institute</h5>
+            <h4 class="date">May 2023 - Aug. 2023</h6>
+            <p class="description">
+              I did something.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="spacer-bottom"></div>
+    </section>
+
+    <section id="education">
+      <h1 class="header">Education</h1>
+      <div class="hero">
+        <div class="work-container">
+          <div class="base-container">
+            <div class="logo-container">
+              <a href="https://www.berkeley.edu/">
+                <img src="assets/img/logo/berkeley.png" class="logo">
+              </a>
+            </div>
+            <div class="description-container">
+              <h2 class="position">M.S. in <span class="half-hide">Electrical Engineering & Computer Science (</span>EECS<span class="half-hide">)</span></h2>
+              <h3 class="organization">University of California, Berkeley</h3>
+              <h4 class="date">Sept. 2024 - May 2025</h4>
+            </div>
+          </div>
+          <!-- <i class="fas fa-chevron-down"></i> -->
+          <div class="description">
+            <div class="coursework">
+              <img src="assets/img/icon/book.png" class="icon" />
+              <h3 class="title">Coursework</h3>
+              <div class="list-container">
+                <ul class="list">
+
+                </ul>
+              </div>
+            </div>
+            <div class="activity">
+              <img src="assets/img/icon/people.png" class="icon" />
+              <h3 class="title">Activities</h3>
+              <div class="list-container">
+                <ul class="list">
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-container">
+          <div class="base-container">
+            <div class="logo-container">
+              <a href="https://www.berkeley.edu/">
+                <img src="assets/img/logo/berkeley.png" class="logo">
+              </a>
+            </div>
+            <div class="description-container">
+              <h2 class="position">B.S. in <span class="half-hide">Electrical Engineering & Computer Science (</span>EECS<span class="half-hide">)</span></h2>
+              <h3 class="organization">University of California, Berkeley</h3>
+              <h4 class="date">Sept. 2020 - May 2024</h4>
+            </div>
+          </div>
+
+          <input type="checkbox" id="e2">
+          <label for="e2">
+            <i class="fas fa-chevron-down"></i>
+          </label>
+
+          <div class="description" id="eecs">
+            <div class="coursework">
+              <img src="assets/img/icon/book.png" class="icon" />
+              <h3 class="title">Coursework</h3>
+              <div class="list-container">
+                <ul class="list">
+                  <li><b>CS 61A:</b> Structure of Computer Programs</li>
+                  <li><b>CS 61B:</b> Data Structures</li>
+                  <li><b>CS 61C:</b> Computer Architecture</li>
+                  <li><b>CS 70:</b> Discrete Mathematics & Probability</li>
+                  <li><b>CS 161:</b> Comuter Security</li>
+                  <li><b>CS 162:</b> Operating Systems</li>
+                  <li><b>CS 170:</b> Efficient Algorithms</li>
+                  <li><b>CS 184:</b> Foundations of Computer Graphics</li>
+                  <li><b>CS 186:</b> Database Systems</li>
+                  <li><b>CS 188:</b> Artificial Intelligence</li>
+                  <li><b>CS 189:</b> Machine Learning</li>
+                  <li><b>EECS 16A/B:</b> Designing Information Systems I/II</li>
+                  <li><b>EE 120:</b> Signals and Systems</li>
+                  <li><b>EECS 127:</b> Optimization Models in Engineering</li>
+                  <li><b>EECS C106A/B:</b> Robotic Manipulation I/II</li>
+                </ul>
+              </div>
+            </div>
+            <div class="activity">
+              <img src="assets/img/icon/people.png" class="icon" />
+              <h3 class="title">Course Staff</h3>
+              <div class="list-container">
+                <ul class="list">
+                  <li><b>Su'22:</b> CS 61A Academic Intern</li>
+                  <li><b>Su'22:</b> EECS 16A Tutor</li>
+                  <li><b>Fa'22:</b> EECS 16A Tutor</li>
+                  <li><b>Sp'23:</b> EECS 16A Tutor</li>
+                  <li><b>Su'23:</b> CS 188 Tutor</li>
+                  <li><b>Fa'23:</b> EECS 16A Tutor</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-container">
+          <div class="base-container">
+            <div class="logo-container">
+              <a href="https://www.berkeley.edu/">
+                <img src="assets/img/logo/berkeley.png" class="logo">
+              </a>
+            </div>
+            <div class="description-container">
+              <h2 class="position">B.S. in Bioengineering</h2>
+              <h3 class="organization">University of California, Berkeley</h3>
+              <h4 class="date">Sept. 2020 - May 2024</h4>
+            </div>
+          </div>
+
+          <input type="checkbox" id="e3">
+          <label for="e3">
+            <i class="fas fa-chevron-down"></i>
+          </label>
+
+          <div class="description">
+            <div class="coursework">
+              <img src="assets/img/icon/book.png" class="icon" />
+              <h3 class="title">Coursework</h3>
+              <div class="list-container">
+                <ul class="list">
+                  <li><b>BioE 10:</b> Intro to Biomedicine for Engineers</li>
+                  <li><b>BioE 11:</b> Engineering Molecules</li>
+                  <li><b>BioE 100:</b> Ethics in Science and Engineering</li>
+                  <li><b>BioE 101:</b> Instrumentation in Biology & Medicine</li>
+                  <li><b>BioE 102:</b> Biomechanics - Analysis and Design</li>
+                  <li><b>BioE 105:</b> Engineering Devices I</li>
+                  <li><b>BioE 110:</b> Biomedical Physiology for Engineers</li>
+                  <li><b>BioE 121:</b> BioMEMS and Medical Devices</li>
+                  <li><b>BioE C119:</b> Orthopedic Biomechanics</li>
+                  <li><b>BioE C131:</b> Comp. Molecular and Cell Biology</li>
+                </ul>
+              </div>
+            </div>
+            <div class="activity">
+              <img src="assets/img/icon/people.png" class="icon" />
+              <h3 class="title">Activities</h3>
+              <div class="list-container">
+                <ul class="list">
+                  <li>AFX Dance (Tech)</li>
+                  <li>Berkeleytime</li>
+                  <li>Berkeley Engineers and Mentors</li>
+                  <li>Bioengineering Honor Society</li>
+                  <li>EthiCAL Apparel</li>
+                  <li>Innovative Design</li>
+                  <li>NeuroTech@Berkeley</li>
+                  <li>Space Tech@Cal</li>
+                  <li>Taiwanese American Stu. Assoc.</li>
+                  <li>Tau Beta Pi CA-A Chapter</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-container">
+          <div class="base-container">
+            <div class="logo-container">
+              <a href="">
+                <img src="assets/img/logo/house.png" class="logo">
+              </a>
+            </div>
+            <div class="description-container">
+              <h2 class="position">Leo's Skillshed</h2>
+              <h3 class="organization">Art of Side Questing</h3>
+              <h4 class="date">Apr. 2002 - Present</h4>
+            </div>
+          </div>
+
+          <input type="checkbox" id="e4">
+          <label for="e4">
+            <i class="fas fa-chevron-down"></i>
+          </label>
+
+          <div class="description" id="skills">
+            <div class="coursework">
+              <img src="assets/img/icon/code.png" class="icon" />
+              <h3 class="title">Languages</h3>
+              <div class="list-container">
+                <ul class="list">
+                  <li>Python • Javascript •</li>
+                  <li>Typescript • HTML • CSS •</li>
+                  <li>ROS • Java • C • C# • C++ •</li>
+                  <li>SQL • R • Go • RISC-V</li>
+                  <li>Assembly • x86 Assembly</li>
+                </ul>
+              </div>
+            </div>
+            <div class="coursework">
+              <img src="assets/img/icon/gear.png" class="icon" />
+              <h3 class="title">Frameworks/Libraries</h3>
+              <div class="list-container">
+                <ul class="list">
+                  <li>React.js • Next.js •</li>
+                  <li>MaterialUI • GraphQL •</li>
+                  <li>Flask • Django • Selenium •</li>
+                  <li>FastAI • Pytorch • SciPy •</li>
+                  <li>NumPy • Pandas • Seaborn • </li>
+                  <li>Matplotlib • SciKit-Learn •</li>
+                  <li>Folium • Jupyter • .NET</li>
+                </ul>
+              </div>
+            </div>
+            <div class="coursework">
+              <img src="assets/img/icon/wrench.png" class="icon" style="transform: rotateZ(-30deg);"/>
+              <h3 class="title">Tools/Etc.</h3>
+              <div class="list-container">
+                <ul class="list">
+                  <li>Bash Scripting • Git •</li>
+                  <li>GitHub • Figma • Postman •</li>
+                  <li>Docker • Makefile • Arduino •</li>
+                  <li>MongoDB • Firebase • Fusion</li>
+                  <li>360 • Inventor • PTC Creo •</li>
+                  <li>Adobe Creative • WPF</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="spacer-top"></div>
+      <h1 class="header">Projects</h1>
+      <div class="hero">
+        <div class="project">
+          <div class="preview-container bordered">
+            <img class="preview" src="assets/img/project/hume-poker.jpg" />
+          </div>
+          <div class="info-container">
+            <h3 class="title">Hume AI Poker Bot</h3>
+            <p class="stack">react / next.js / javascript / css</p>
+          </div>
+
+          <input type="checkbox" id="p1">
+          <label for="p1">
+            <i class="fas fa-chevron-down"></i>
+          </label>
+
+          <div class="description-container">
+            <p class="description">
+              Submission for UC Berkeley AI Hackathon 2024. <br />
+              An educational tool which uses Hume AI's Expression Measurement API to measure key emotions and return a metric that tells how a player might be performing emotionally.
+              Additionally, the bot also offers a tool to query GPT4 about the condition of the field, suggestions on how to play, and more.
+            </p>
+            <a href="https://devpost.com/software/poker-skill-rating-w-hume-ai">
+              <img class="link" src="assets/img/icon/devpost-purple.png" />
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="preview-container">
+            <img class="preview" src="assets/img/project/robotic-fluid.png" />
+          </div>
+          <div class="info-container">
+            <h3 class="title">Robotic Manipulation of Fluids</h3>
+            <p class="stack">python / ROS / OpenCV</p>
+          </div>
+
+          <input type="checkbox" id="p2">
+          <label for="p2">
+            <i class="fas fa-chevron-down"></i>
+          </label>
+
+          <div class="description-container">
+            <p class="description">
+              Developed a physics model and planning scheme for estimating fluid in containers and pouring desired amounts using Rethink Robotics' Sawyer Arm and OpenCV.
+            </p>
+            <a href="https://drive.google.com/drive/u/1/folders/1a5G2iRMnJ9FI5Vs595J5iB74GcbzpOwo">
+              <img class="link" src="assets/img/icon/link-purple.png" />
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="preview-container">
+            <img class="preview" src="assets/img/project/spatial-bear.png" />
+          </div>
+          <div class="info-container">
+            <h3 class="title">Spatial Keyframing a Bear</h3>
+            <p class="stack">c++ / python / OpenGL</p>
+          </div>
+
+          <input type="checkbox" id="p3">
+          <label for="p3">
+            <i class="fas fa-chevron-down"></i>
+          </label>
+
+          <div class="description-container">
+            <p class="description">
+              Implemented a rasterizer with antialiasing and texture mapping, mesh editor that builds Bezier surfaces and manipulates triangle meshes, physically-based renderer using path tracing to generate realistic images, and real-time simulation of cloth.
+              Additionally, created animation framework based on spatial keyframing research.
+            </p>
+            <a href="https://drive.google.com/drive/u/1/folders/1J8Q7gcaVvXdyMqH_7gfxKKtXWhG9j0st">
+              <img class="link" src="assets/img/icon/link-purple.png" />
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="preview-container">
+            <img class="preview" src="assets/img/project/robotic-property.png" />
+          </div>
+          <div class="info-container">
+            <h3 class="title">Robotic Manipulation of Props</h3>
+            <p class="stack">python / ROS / UR5</p>
+          </div>
+
+          <input type="checkbox" id="p4">
+          <label for="p4">
+            <i class="fas fa-chevron-down"></i>
+          </label>
+
+          <div class="description-container">
+            <p class="description">
+              Developed a planning scheme for estimating different objects' rigidity and moving them between two points using Universal Robots UR5 Arm, Robotiq 2F-140 Gripper, and ATI Axia80 Force/Torque Sensor.
+            </p>
+            <a href="https://drive.google.com/drive/u/1/folders/1eETKwLKN7xu8juJ8k5U_gDKL15VNJSwa">
+              <img class="link" src="assets/img/icon/link-purple.png" />
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="preview-container">
+            <img class="preview" src="assets/img/project/surface-emg.png" />
+          </div>
+          <div class="info-container">
+            <h3 class="title">Surface EMG Sensor</h3>
+            <p class="stack">arduino / c++ / signal processing</p>
+          </div>
+
+          <input type="checkbox" id="p5">
+          <label for="p5">
+            <i class="fas fa-chevron-down"></i>
+          </label>
+
+          <div class="description-container">
+            <p class="description">
+              Designed and built a surface electromyography (EMG) data-acquisition sensor to detect fist formation and finger-specific movement.
+            </p>
+            <a href="https://docs.google.com/presentation/d/1E5rahMeKjW63RN7B3IWRrunA9bsv0NtRK1gECeixDYE/edit#slide=id.p">
+              <img class="link" src="assets/img/icon/link-purple.png" />
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="preview-container bordered">
+            <img class="preview" src="assets/img/project/venmo-integration.png" />
+          </div>
+          <div class="info-container">
+            <h3 class="title">Venmo Integration</h3>
+            <p class="stack">python / html / css / SQLite3</p>
+          </div>
+
+          <input type="checkbox" id="p6">
+          <label for="p6">
+            <i class="fas fa-chevron-down"></i>
+          </label>
+
+          <div class="description-container">
+            <p class="description">
+              A web-portal for the Taiwanese American Student Association that queries and sorts through Venmo transactional data using Venmo API.
+              Allows for keyword and date range searches that would filter the data.
+              Saved the Treasurer 20+ hours of manual labor.
+            </p>
+            <a href="https://github.com/j0nnn/Venmo-Integration">
+              <img class="link" src="assets/img/icon/github-purple.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="spacer-bottom"></div>
+    </section>
+
+    <section id="footer">
+      <div class="hero">
+        <div class="tag">
+          <h1>let's go <span class="blue">exploring</span>!</h1>
+          <div class="icon-bar">
+            <a href="#home">
+              <img class="logo" src="assets/img/icon/logo-blue.png" /></a>
+            <a href="https://www.linkedin.com/in/huangleo00/">
+              <img class="icon" src="assets/img/icon/linkedin-purple.png" /></a>
+            <a href="https://devpost.com/klhftco">
+              <img class="icon" src="assets/img/icon/devpost-purple.png" /></a>
+            <a href="https://github.com/klhftco">
+              <img class="icon" src="assets/img/icon/github-purple.png" /></a>
+            <a href="mailto:klhftco@berkeley.edu">
+              <img class="icon" src="assets/img/icon/email-purple.png" /></a>
+          </div>
+        </div>
+        <div class="nav">
+          <div class="work">
+            <div>
+              <a href="#experience">work</a>
+            </div>
+            <div class="list">
+              <a href="https://berkeleytime.com/">Berkeleytime</a>
+              <a href="https://tilabberkeley.com/">DNA Origami</a>
+              <a href="https://www.jbei.org/">Protein Research</a>
+            </div>
+            <div class="list">
+              <a href="https://devpost.com/software/poker-skill-rating-w-hume-ai">Hume AI Bot</a>
+              <a href="https://drive.google.com/drive/u/1/folders/1PwhNWYuvLzLA-MJ9X8ipQFhmIu8r38kC">Robotic Manipulation</a>
+              <a href="https://github.com/j0nnn/Venmo-Integration/">Venmo Integration</a>
+            </div>
+          </div>
+          <div>
+            <a href="#about">about</a>
+          </div>
+          <div>
+            <a href="http://tinyurl.com/leo-huang-resume">résumé</a>
+          </div>
+        </div>
+        <div class="scroll">
+          <a href="#top">
+            <img class="icon" src="assets/img/icon/up.png" /></a>
+        </div>
+      </div>
+      <div class="credit">
+        created by Leo Huang
+      </div>
+    </section>
+
     <!-- <script src="script.js" defer></script> -->
   </body>
 </html>
