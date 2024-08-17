@@ -759,6 +759,39 @@ section styles
         .blue {
           color: var(--clr-blue);
         }
+
+        .r-container {
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: auto;
+          width: auto;
+          /* overflow: hidden; */
+        }
+
+        .rainbow{
+        	position: relative;
+        	color: #000;
+        	background: #fff;
+        	/* mix-blend-mode: multiply; */
+          /* overflow: hidden; */
+        }
+        .rainbow::before{
+        	content: "";
+        	position: absolute;
+        	top:0;right:0;bottom:0;left:0;
+          /* left:-100%; */
+        	background: white repeating-linear-gradient(90deg, #EB5E55 0%, #30BCED 16.66666%, #30BCED 33.33333%, #EB5E55 50.0%);
+        	/* mix-blend-mode: screen; */
+        	pointer-events: none;
+          animation: move 1s linear infinite;
+        }
+
+        @keyframes move{
+          0%   {transform: translateX(-100%);}
+          100% {transform: translateX(100%);}
+        }
       }
 
       .icon-bar {
