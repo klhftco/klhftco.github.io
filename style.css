@@ -1,3 +1,134 @@
-* {
-  
+/*===============
+  global styles
+===============*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --header-font: 'Courier Prime', serif;
+  --header-font-weight: bold;
+  --body-font: 'Courier Prime', serif;
+  --body-font-weight: normal;
+  --site-width: 40%;
+
+  /* TODO: color scheme */
+  --clr-bg: #444444;
+  --clr-fg: #bebebe;
+  --clr-accent: #2069e0;
+  --clr-medium: #878683;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: var(--body-font);
+  font-weight: var(--body-font-weight);
+  background-color: var(--clr-bg);
+  color: var(--clr-fg);
+  line-height: 1.5;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
+    text-align: center;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  box-shadow: none;
+  box-sizing: border-box;
+
+}
+
+section {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .hero {
+    width: var(--site-width);
+    padding: 1vw;
+  }
+}
+
+/*===============
+section styles
+===============*/
+
+#nav {
+  height: 10vh;
+  display: inline-block;
+
+  .nav {
+    position: absolute;
+    /* height: 24px; */
+    top: 4vh;
+    right: 4vw;
+
+    a:hover {
+      color: var(--clr-medium);
+    }
+
+    .nav-list {
+      height: inherit;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 20px;
+
+      .link {
+        text-decoration: none;
+        font-family: var(--header-font);
+        font-weight: var(--body-font-weight);
+      }
+    }
+    .hide {
+      display: none;
+    }
+  }
+}
+
+#home {
+
+}
+
+#about {
+
+}
+
+#experience {
+
+}
+
+#education {
+
+}
+
+#project {
+
+}
+
+#footer {
+
+}
+
+/* ----------------------------------------- */
+
+/*===============
+section styles END
+===============*/
