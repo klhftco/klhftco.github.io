@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.flourish-embed {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  width: 80vw;
+  /* height: 40vh; */
+  border: 3px solid black;
+}
