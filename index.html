@@ -1,32 +1,303 @@
-<!DOCTYPE html>
-<html lang='en'>
+<!DOCTYPE HTML>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="Width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Leo Huang portfolio">
-		<meta name="keywords" content="Leo Huang, UC Berkeley">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Leo Huang</title>
 
-    <title>klhftco</title>
+    <meta name="author" content="Leo Huang">
+    <meta name="description" content="Leo Huang is a robotics researcher at Berkeley AI Research (BAIR), advised by Prof. Shankar Sastry.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
+
   <body>
-    <div>
-	     <a href="/button/index.html">Other Work (Button)</a>
-       <br><br>
-       <a href="/website/index.html">My Website (wip)</a>
-       <br><br>
-    </div>
-    <!-- <script src="script.js" defer></script> -->
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+
+          <!-- ============ HEADER: bio, links, photo ============ -->
+          <table class="header" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Leo Huang
+                </p>
+                <p>
+                  I'm a robotics researcher at <a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a>, advised by <a href="https://people.eecs.berkeley.edu/~sastry/">Prof. Shankar Sastry</a>.
+                  I work with Prof. Sastry and <a href="https://people.eecs.berkeley.edu/~tomlin/">Prof. Claire Tomlin</a> on the DARPA TIAMAT program, where our Berkeley and Stanford team placed 2nd in Phase 1.
+                  I build manipulation tools for our Spot field deployments.
+                </p>
+                <p>
+                  I received my M.S. in EECS from <a href="https://eecs.berkeley.edu/">UC Berkeley</a> in 2025, following B.S. degrees in EECS and Bioengineering.
+                  Before robotics, I worked on DNA origami placement with <!-- PLACEHOLDER: add a link to Prof. Tikhomirov's lab page --><a href="#">Prof. Grigory Tikhomirov</a> (my M.S. thesis) and on magnetic particle imaging with <a href="https://bisl.berkeley.edu/">Prof. Steven Conolly</a>.
+                  I also worked on vision-language navigation for quadrupeds with <a href="https://hybrid-robotics.berkeley.edu/koushil/">Prof. Koushil Sreenath</a>.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:klhftco@berkeley.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="data/Leo_Huang_CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <!-- PLACEHOLDER: replace href with your Google Scholar profile URL, or delete this link -->
+                  <a href="#">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/klhftco">GitHub</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/huangleo00">LinkedIn</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <!-- PLACEHOLDER: replace images/profile.svg with your photo (square crop, e.g. images/profile.jpg) -->
+                <a href="images/profile.svg"><img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/profile.svg"></a>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ============ RESEARCH STATEMENT ============ -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm working toward humanoid and mobile manipulators that can safely provide physical assistance to people.
+                  I want to make robot adaptation rapid and measurable, teach robots resourceful, creative problem solving, and build whole-body dexterous manipulation with safe learning-based control.
+                  My current work covers multimodal spatial memory for object search (<a href="#farm">FARM</a>) and improving a robot's tools in simulation before field deployment (<a href="#diner">Double-T DINER</a>).
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ============ NEWS ============ -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>News</h2>
+                <ul class="news">
+                  <li><span class="news-date">2026.10</span><a href="https://ember-center-berkeley.github.io/diner/">Double-T DINER</a> was accepted to the CoRL 2026 Sim2Real2Field workshop.</li>
+                  <li><span class="news-date">2026.09</span>Deployed our Spot manipulation tools at DARPA TIAMAT Phase 2 Event 1, a week-long field event.</li>
+                  <li><span class="news-date">2026.06</span><a href="https://arxiv.org/abs/2606.15476">FARM</a> is on arXiv.</li>
+                  <!-- PLACEHOLDER: add the month (e.g. 2026.03) -->
+                  <li><span class="news-date">2026</span>Our Berkeley and Stanford team placed 2nd in Phase 1 of DARPA TIAMAT.</li>
+                  <li><span class="news-date">2025.05</span>Received my M.S. in EECS from UC Berkeley. Thesis: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-76.html">Precision Placement of DNA Origami onto Patterned Silicon Wafer Surfaces</a>.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ============ PUBLICATIONS ============
+               Each row: 160x160 thumbnail on the left, citation on the right.
+               bgcolor="#ffffd0" highlights a row (used here for first-author work). -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px 16px 0px 16px;width:100%;vertical-align:middle">
+                <h2>Publications</h2>
+                <p>* denotes equal contribution.</p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr id="farm">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <!-- PLACEHOLDER: replace with a FARM figure or video still -->
+                <div class="one"><img src="images/farm.svg" width="160" alt="FARM thumbnail"></div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2606.15476">
+                  <span class="papertitle">FARM: Find Anything using Relational Spatial Memory</span>
+                </a>
+                <br>
+                Siming He,
+                <strong>Leo Huang</strong>,
+                Adam Lilja,
+                Fabio Huebel,
+                <a href="https://jonasfrey96.github.io/">Jonas Frey</a>,
+                Marco Pavone,
+                S. Shankar Sastry,
+                Jitendra Malik,
+                Claire Tomlin
+                <br>
+                <em>arXiv</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2606.15476">arXiv</a>
+                <p></p>
+                <p>
+                  A real-time, open-vocabulary object memory that answers queries describing an object by its relations to landmarks and nearby objects.
+                  Across 44k queries in 67 indoor and outdoor scenes, FARM improves Recall@5 by 164% over prior methods, and it runs closed-loop on a quadruped.
+                </p>
+              </td>
+            </tr>
+
+            <tr id="diner" bgcolor="#ffffd0">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <!-- PLACEHOLDER: replace with the DINER teaser image or a field-trial video still -->
+                <div class="one"><img src="images/diner.svg" width="160" alt="Double-T DINER thumbnail"></div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://ember-center-berkeley.github.io/diner/">
+                  <span class="papertitle">Double-T DINER: Deploying Improvements in New Environments via Refined Tool Transfer</span>
+                </a>
+                <br>
+                Henry Tsai*,
+                <strong>Leo Huang*</strong>,
+                Denae Cantrell*,
+                Narek Harutyunyan,
+                Hunter Tsai,
+                Maggie Dong,
+                David Jo,
+                Claire Tomlin,
+                S. Shankar Sastry
+                <br>
+                <em>CoRL 2026 Workshop on Sim-to-Real-to-Field (Sim2Real2Field)</em>
+                <br>
+                <a href="https://ember-center-berkeley.github.io/diner/">project page</a>
+                <p></p>
+                <p>
+                  A refiner agent edits a Spot robot's pick-and-place tools in simulation, and we test whether the edits that help in simulation also help in real-world field trials.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <!-- PLACEHOLDER: replace with an AFM image from the thesis -->
+                <div class="one"><img src="images/thesis.svg" width="160" alt="DNA origami thesis thumbnail"></div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-76.html">
+                  <span class="papertitle">Precision Placement of DNA Origami onto Patterned Silicon Wafer Surfaces</span>
+                </a>
+                <br>
+                <strong>Leo Huang</strong>
+                <br>
+                <em>M.S. Thesis</em>, UC Berkeley EECS, 2025 (Technical Report UCB/EECS-2025-76)
+                <br>
+                <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-76.html">tech report</a>
+                <p></p>
+                <p>
+                  Placed hexagonal DNA origami onto patterned silicon wafers and raised single-origami binding yield 4x by tuning buffer conditions and deposition methods.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <!-- PLACEHOLDER: replace with a figure from the paper -->
+                <div class="one"><img src="images/mpi.svg" width="160" alt="Magnetic particle imaging thumbnail"></div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://doi.org/10.36227/techrxiv.24309607.v2">
+                  <span class="papertitle">Broadband Untuned Active Cancellation and Phase Correction of Direct Feedthrough Interference Enables 100-fold Improved Magnetic Particle Imaging Detection</span>
+                </a>
+                <br>
+                Q. Huynh, O. Doyle, K. Guo, A. Swamynathan,
+                <strong>L. Huang</strong>,
+                J. Garlepp, N. Dambal, J. Bryan, S. Ramdani, C. Saayujya, B. Fung, Y. Lu, B. Fellows, O. Sehl, S. Conolly
+                <br>
+                <em>TechRxiv</em>, 2023
+                <br>
+                <a href="https://doi.org/10.36227/techrxiv.24309607.v2">preprint</a>
+                <p></p>
+                <p>
+                  An untuned active cancellation circuit removes direct feedthrough interference in magnetic particle imaging and improves detection 100-fold.
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          <!-- ============ OTHER RESEARCH AND PROJECTS ============ -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px 16px 0px 16px;width:100%;vertical-align:middle">
+                <h2>Other Research and Projects</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <!-- PLACEHOLDER: Isaac Lab or Newton render of the humanoids carrying the payload -->
+                <div class="one"><img src="images/payload.svg" width="160" alt="Multi-humanoid payload transport thumbnail"></div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Multi-Humanoid Rigid Payload Transport</span>
+                <br>
+                <em>Sastry Lab, ongoing</em>
+                <p></p>
+                <p>
+                  Whole-body control for multiple humanoids carrying a shared rigid payload, extending earlier single-humanoid liquid-transport work in Isaac Lab and Newton.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <!-- PLACEHOLDER: quadruped navigation screenshot or video still -->
+                <div class="one"><img src="images/navigation.svg" width="160" alt="Object-goal navigation thumbnail"></div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Zero-Shot Object-Goal Navigation with Vision-Language Models</span>
+                <br>
+                <em>Hybrid Robotics Lab, 2025</em>
+                <p></p>
+                <p>
+                  Navigation pipelines that use large language and vision-language models to let quadruped robots find objects in unseen environments.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <!-- PLACEHOLDER: photo of the Tello drone or demo still -->
+                <div class="one"><img src="images/pigeon.svg" width="160" alt="Project Pigeon thumbnail"></div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Project Pigeon</span>
+                <br>
+                <em>1st Place, Bee AI Hackathon</em>, 2025
+                <p></p>
+                <p>
+                  Voice-command control for a DJI Tello drone, combining open-vocabulary (OWL-ViT) and real-time (YOLO) detection with a PID controller for vision-based closed-loop flight.
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          <!-- ============ HONORS AND TEACHING ============ -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Honors</h2>
+                <ul class="plain">
+                  <li>DARPA TIAMAT Challenge, Phase 1: 2nd Place (Berkeley and Stanford team), 2026</li>
+                  <li>Bee AI Hackathon: 1st Place, 2025</li>
+                  <li>Jacobs Institute Innovation Catalysts Ignite Grant (Gazeware BCI), 2023</li>
+                  <li>Tau Beta Pi Engineering Honor Society, 2021</li>
+                </ul>
+                <h2>Teaching</h2>
+                <ul class="plain">
+                  <li>Graduate Student Instructor, EECS C106A: Introduction to Robotics, Fall 2024</li>
+                  <li>Tutor, CS 188: Artificial Intelligence, Summer 2023</li>
+                  <li>Lab Tutor, EECS 16A: Designing Information Devices and Systems I, 2022 - 2023</li>
+                  <li>Academic Intern, CS 61A: Structure and Interpretation of Computer Programs, Summer 2022</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ============ FOOTER ============ -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Website template from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+        </td>
+      </tr>
+    </table>
   </body>
-  <!-- <script>
-		var links = document.body.getElementsByTagName("a")
-		var a = window.location.href.indexOf(".io")
-		var repo_name = window.location.href.substring(a+3)
-		for(var i = 0; i < links.length; i++){
-			var link = links[i]
-			var actual_name = link.href.substring(link.href.indexOf(".io")+4)
-			link.href = repo_name + actual_name
-		}
-	</script> -->
 </html>
