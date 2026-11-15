@@ -174,3 +174,10 @@ ul.plain li {
     margin: 0 auto;
   }
 }
+
+video.thumb-video {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
