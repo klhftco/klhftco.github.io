@@ -8,7 +8,7 @@
     <meta name="author" content="Leo Huang">
     <meta name="description" content="Leo Huang is a robotics researcher at Berkeley AI Research (BAIR), advised by Prof. Shankar Sastry.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=2">
   </head>
 
   <body>
@@ -53,10 +53,8 @@
                 <h2>News</h2>
                 <ul class="news">
                   <li><span class="news-date">2026.10</span><a href="https://ember-center-berkeley.github.io/diner/">Double-T DINER</a> was accepted to the CoRL 2026 Sim2Real2Field workshop.</li>
-                  <li><span class="news-date">2026.09</span>Deployed our Spot manipulation tools at DARPA TIAMAT Phase 2 Event 1, a week-long field event.</li>
                   <li><span class="news-date">2026.06</span><a href="https://arxiv.org/abs/2606.15476">FARM</a> is on arXiv.</li>
-                  <!-- PLACEHOLDER: add the month (e.g. 2026.03) -->
-                  <li><span class="news-date">2026</span>Our Berkeley and Stanford team placed 2nd in Phase 1 of DARPA TIAMAT.</li>
+                  <li><span class="news-date">2026.03</span>Our Berkeley and Stanford team placed 2nd in Phase 1 of DARPA TIAMAT.</li>
                   <li><span class="news-date">2025.05</span>Received my M.S. in EECS from UC Berkeley. Thesis: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-76.html">Precision Placement of DNA Origami onto Patterned Silicon Wafer Surfaces</a>.</li>
                 </ul>
               </td>
@@ -78,7 +76,8 @@
 
             <tr id="farm">
               <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one"><video class="thumb-video" style="object-position:left center;" src="videos/farm.mp4" poster="videos/farm.jpg" muted autoplay loop playsinline aria-label="FARM retrieval demo"></video></div>
+                <!-- Shows only the third-person panel (source x 410-683, y 131-404 of the 720x404 video). -->
+                <div class="one thumb-crop"><video src="videos/farm.mp4" poster="videos/farm.jpg" style="width:421.9px;height:236.7px;left:-240.3px;top:-76.8px;" muted autoplay loop playsinline aria-label="FARM retrieval demo"></video></div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <a href="https://goldengait.github.io/farm/">
@@ -110,7 +109,7 @@
 
             <tr id="diner" bgcolor="#ffffd0">
               <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one"><video class="thumb-video" style="object-position:75% center;" src="videos/diner.mp4" poster="videos/diner.jpg" muted autoplay loop playsinline aria-label="Double-T DINER field trial"></video></div>
+                <div class="one"><video class="thumb-video" style="object-position:75% center;" src="videos/diner.mp4" poster="videos/diner.jpg" data-loop-end="20" muted autoplay loop playsinline aria-label="Double-T DINER field trial"></video></div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <a href="https://ember-center-berkeley.github.io/diner/">
@@ -160,17 +159,17 @@
 
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
-                <!-- PLACEHOLDER: replace with a figure from the paper -->
-                <div class="one"><img src="images/mpi.svg" width="160" alt="Magnetic particle imaging thumbnail"></div>
+                <div class="one"><img src="images/mpi.jpg" width="160" alt="Magnetic particle imaging thumbnail"></div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <a href="https://doi.org/10.36227/techrxiv.24309607.v2">
                   <span class="papertitle">Broadband Untuned Active Cancellation and Phase Correction of Direct Feedthrough Interference Enables 100-fold Improved Magnetic Particle Imaging Detection</span>
                 </a>
                 <br>
-                Q. Huynh, O. Doyle, K. Guo, A. Swamynathan,
-                <strong>L. Huang</strong>,
-                J. Garlepp, N. Dambal, J. Bryan, S. Ramdani, C. Saayujya, B. Fung, Y. Lu, B. Fellows, O. Sehl, S. Conolly
+                Quincy Huynh, Owen Doyle, Kelvin Guo, Arvind Swamynathan,
+                <strong>Leo Huang</strong>,
+                Justin Garlepp, Nessia Dambal, Jacob Bryan, Syahrul Ramdani, Chinmoy Saayujya, Barry KL Fung, Yao Lu, Benjamin Fellows, Olivia Sehl,
+                <a href="https://bisl.studentorg.berkeley.edu/">Steven Conolly</a>
                 <br>
                 <em>TechRxiv</em>, 2023
                 <br>
@@ -252,5 +251,29 @@
         </td>
       </tr>
     </table>
+    <script>
+      // Thumbnail clip control. data-loop-start / data-loop-end trim the loop;
+      // data-skip="a-b,c-d" jumps over ranges (in seconds), such as a black transition.
+      document.querySelectorAll('video[data-loop-end], video[data-skip]').forEach(function (v) {
+        var start = parseFloat(v.dataset.loopStart || '0');
+        var end = v.dataset.loopEnd ? parseFloat(v.dataset.loopEnd) : Infinity;
+        var skips = (v.dataset.skip || '').split(',').filter(Boolean).map(function (r) {
+          return r.split('-').map(parseFloat);
+        });
+        function check() {
+          var t = v.currentTime;
+          if (t >= end) { v.currentTime = start; return; }
+          for (var i = 0; i < skips.length; i++) {
+            if (t >= skips[i][0] && t < skips[i][1]) { v.currentTime = skips[i][1]; return; }
+          }
+        }
+        // Frame callbacks are precise but pause in background tabs; timeupdate covers that case.
+        v.addEventListener('timeupdate', check);
+        if (v.requestVideoFrameCallback) {
+          var tick = function () { check(); v.requestVideoFrameCallback(tick); };
+          v.requestVideoFrameCallback(tick);
+        }
+      });
+    </script>
   </body>
 </html>

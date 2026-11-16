@@ -181,3 +181,12 @@ video.thumb-video {
   object-fit: cover;
   display: block;
 }
+
+.thumb-crop {
+  overflow: hidden;
+  background: #000;
+}
+
+.thumb-crop video {
+  position: absolute;
+}
