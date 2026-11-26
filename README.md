@@ -4,7 +4,7 @@ Leo Huang's personal website. Each version of the site lives on its own branch, 
 
 | Branch | Version |
 |---|---|
-| `site/barron` | Research site built from Jon Barron's template (live as of November 2026) |
+| `site/research` | Research site built from Jon Barron's template (live as of November 2026) |
 | `site/vanilla` | Earlier HTML/CSS site (September 2024) |
 | `site/react` | React version, source code (June 2024) |
 | `site/react-build` | Built React site that Pages can serve |
